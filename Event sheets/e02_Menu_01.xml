@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>e02_Menu_01</name>
+    <events>
+        <variable comment="nivel actual del jugador en unidad 1" constant="0" name="modulo" sid="597456322025117" static="0" type="number">1</variable>
+        <event-group description="" sid="569920169081560" title="Eventos_Touch">
+            <sub-events>
+                <event-block sid="250004382115555">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="931322512794169" type="Touch">
+                            <param id="0" name="Object">menu1_1</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="655971492767719">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="875129915615016" type="System">
+                                    <param id="0" name="Variable">modulo</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="116440001375804" type="Function">
+                                    <param id="0" name="Name">&quot;shake01&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                                <action id="-16" name="Wait" sid="831278499939082" type="System">
+                                    <param id="0" name="Seconds">1.0</param>
+                                </action>
+                                <action id="-2" name="Go to layout" sid="844007366823890" type="System">
+                                    <param id="0" name="Layout">01_Avatar</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="464174216534476">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="322255633728452" type="Touch">
+                            <param id="0" name="Object">menu1_5</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="893814446455595">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="625662605279142" type="System">
+                                    <param id="0" name="Variable">modulo</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="379768727010661" type="Function">
+                                    <param id="0" name="Name">&quot;shake05&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                                <action id="-16" name="Wait" sid="198032304003629" type="System">
+                                    <param id="0" name="Seconds">1.0</param>
+                                </action>
+                                <action id="-2" name="Go to layout" sid="885493161204654" type="System">
+                                    <param id="0" name="Layout">07_Game_farm</param>
+                                </action>
+                                <action id="0" name="Play" sid="280690026543163" type="Audio">
+                                    <param id="0" name="Audio file">amazonas</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;ambiente&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="483331245589238" title="Habilitar_Botones">
+            <sub-events>
+                <event-block sid="830499531745233">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="289153033235477" type="System">
+                            <param id="0" name="Variable">modulo</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-27" name="Set effect enabled" sid="451513718200505" type="menu1_1">
+                            <param id="0" name="Mode">0</param>
+                            <param id="1" name="Effect">&quot;Grayscale&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="467937844114362">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="262970869515386" type="System">
+                            <param id="0" name="Variable">modulo</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-27" name="Set effect enabled" sid="158902850760173" type="menu1_5">
+                            <param id="0" name="Mode">0</param>
+                            <param id="1" name="Effect">&quot;Grayscale&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="496624924127541" title="Shake">
+            <sub-events>
+                <event-block sid="221037358001449">
+                    <conditions>
+                        <condition id="0" name="On function" sid="707911282319102" type="Function">
+                            <param id="0" name="Name">&quot;shake01&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-1" name="Set X" sid="259038089838198" type="menu1_1">
+                            <param id="0" name="X">menu1_1.X + 10</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="247444641964878" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="-1" name="Set X" sid="498291644359670" type="menu1_1">
+                            <param id="0" name="X">menu1_1.X - 20</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="972716941210083" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="-1" name="Set X" sid="634892233379402" type="menu1_1">
+                            <param id="0" name="X">menu1_1.X + 10</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="828862063020517" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="353439018612870">
+                    <conditions>
+                        <condition id="0" name="On function" sid="833406201570376" type="Function">
+                            <param id="0" name="Name">&quot;shake05&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-1" name="Set X" sid="159106373409182" type="menu1_5">
+                            <param id="0" name="X">menu1_5.X + 10</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="370102181207460" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="-1" name="Set X" sid="522971298906863" type="menu1_5">
+                            <param id="0" name="X">menu1_5.X - 20</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="732112000650662" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="-1" name="Set X" sid="369155470973689" type="menu1_5">
+                            <param id="0" name="X">menu1_5.X + 10</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="575684370054022" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>
