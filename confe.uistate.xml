@@ -10,10 +10,10 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout active="1" order="0">01_splash</layout>
+        <layout order="0">01_splash</layout>
         <layout order="2">07_Game_farm</layout>
         <event-sheet order="1">e01_splash</event-sheet>
-        <event-sheet order="3">e07_Game_farm</event-sheet>
+        <event-sheet active="1" order="3">e07_Game_farm</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -27,7 +27,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <folders-expanded>
         <folder expanded="1" path="object-folder/" />
         <folder expanded="0" path="object-folder/sprites/" />
-        <folder expanded="1" path="object-folder/logos/" />
+        <folder expanded="0" path="object-folder/logos/" />
         <folder expanded="0" path="object-folder/backgrounds/" />
         <folder expanded="0" path="object-folder/system/" />
         <folder expanded="0" path="object-folder/btn/" />
@@ -92,6 +92,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/choza/" />
         <folder expanded="1" path="animation-folder/semillas/" />
         <folder expanded="1" path="animation-folder/heno/" />
+        <folder expanded="1" path="animation-folder/rasuradora/" />
         <folder expanded="1" path="animation-folder/inv_axe/" />
         <folder expanded="1" path="animation-folder/inv_hand/" />
         <folder expanded="1" path="animation-folder/inv_carretillo/" />

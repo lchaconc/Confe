@@ -315,6 +315,52 @@
                         </action>
                     </actions>
                 </event-block>
+                <event-block sid="570938205672704">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="512026168504387" type="Touch">
+                            <param id="0" name="Object">inv_rasuradora</param>
+                        </condition>
+                        <condition id="-8" name="Is boolean instance variable set" sid="713216154709705" type="inv_rasuradora">
+                            <param id="0" name="Instance variable">activo</param>
+                        </condition>
+                        <condition id="-8" name="Is boolean instance variable set" sid="524678849648436" type="oveja">
+                            <param id="0" name="Instance variable">colision</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-13" name="Set boolean" sid="164109023244161" type="inv_rasuradora">
+                            <param id="0" name="Instance variable">activo</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="0" name="Call function" sid="452467065384146" type="Function">
+                            <param id="0" name="Name">&quot;cerarModalInventario&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="0" name="Play" sid="622491310835081" type="Audio">
+                            <param id="0" name="Audio file">rasuradora</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;rasuradora&quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="407284439315704" type="System">
+                            <param id="0" name="Seconds">3</param>
+                        </action>
+                        <action id="0" name="Play" sid="106018027215145" type="Audio">
+                            <param id="0" name="Audio file">oveja</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;rasuradora&quot;</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="733052919395932" type="oveja">
+                            <param id="0" name="Instance variable">activo</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Call function" sid="591025297273026" type="Function">
+                            <param id="0" name="Name">&quot;abrirPapiro2&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
                 <comment>Construcción de la cabaña (casa - choza)</comment>
                 <event-block sid="671652475834634">
                     <conditions>
@@ -422,6 +468,10 @@
                                 <action id="-15" name="Set visible" sid="894426788059374" type="granero">
                                     <param id="0" name="Visibility">1</param>
                                 </action>
+                                <action id="-13" name="Set boolean" sid="498770774441397" type="granero">
+                                    <param id="0" name="Instance variable">activo</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
                                 <action id="-3" name="Set position" sid="962922483261984" type="farmMainCharacter">
                                     <param id="0" name="X">1792</param>
                                     <param id="1" name="Y">340</param>
@@ -429,6 +479,10 @@
                                 <action id="-9" name="Set value" sid="400430145992674" type="System">
                                     <param id="0" name="Variable">status</param>
                                     <param id="1" name="Value">&quot;Granero construido&quot;</param>
+                                </action>
+                                <action id="0" name="Call function" sid="583595657623193" type="Function">
+                                    <param id="0" name="Name">&quot;abrirPapiro3&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
                                 </action>
                             </actions>
                         </event-block>
@@ -501,6 +555,23 @@
                             <param id="1" name="Value">1</param>
                         </action>
                         <action id="0" name="Call function" sid="898008889245742" type="Function">
+                            <param id="0" name="Name">&quot;abrirModalInv&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="416954338535460">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="966719089022141" type="farmMainCharacter">
+                            <param id="0" name="Object">oveja</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-13" name="Set boolean" sid="750957195324643" type="oveja">
+                            <param id="0" name="Instance variable">colision</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Call function" sid="217532080742002" type="Function">
                             <param id="0" name="Name">&quot;abrirModalInv&quot;</param>
                             <param id="1" name="Parameter {n}"></param>
                         </action>
@@ -605,6 +676,29 @@
                             <param id="1" name="Value">1</param>
                         </action>
                         <action id="0" name="Play" sid="484227741778843" type="Audio">
+                            <param id="0" name="Audio file">obtenido</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;obtenido&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="973144970965344">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="993893451275192" type="farmMainCharacter">
+                            <param id="0" name="Object">rasuradora</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="505092943124412" type="rasuradora" />
+                        <action id="-15" name="Set visible" sid="101157986197127" type="inv_rasuradora">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="351868425270794" type="inv_rasuradora">
+                            <param id="0" name="Instance variable">activo</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="426511977408915" type="Audio">
                             <param id="0" name="Audio file">obtenido</param>
                             <param id="2" name="Loop">0</param>
                             <param id="3" name="Volume">0</param>
@@ -940,6 +1034,77 @@
                             <param id="1" name="Value">&quot;Ocultando  papiro dia 2&quot;</param>
                         </action>
                         <action id="0" name="Play" sid="881073736251690" type="Audio">
+                            <param id="0" name="Audio file">amazonas</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;ambiente&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="961014773112173">
+                    <conditions>
+                        <condition id="0" name="On function" sid="269995977840049" type="Function">
+                            <param id="0" name="Name">&quot;abrirPapiro3&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Is boolean instance variable set" sid="315598346642312" type="oveja">
+                            <param id="0" name="Instance variable">activo</param>
+                        </condition>
+                        <condition id="-8" name="Is boolean instance variable set" sid="848146616292124" type="granero">
+                            <param id="0" name="Instance variable">activo</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="576848611357236" type="System">
+                            <param id="0" name="Variable">status</param>
+                            <param id="1" name="Value">&quot;fin dia 2&quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="700741200532121" type="System">
+                            <param id="0" name="Seconds">3</param>
+                        </action>
+                        <action disabled="1" id="6" name="Stop" sid="892091603179560" type="Audio">
+                            <param id="0" name="Tag">&quot;ambiente2&quot;</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="389348553587494" type="System">
+                            <param id="0" name="Variable">status</param>
+                            <param id="1" name="Value">&quot;Mostrando papiro dia 2&quot;</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="139690337317113" type="System">
+                            <param id="0" name="Variable">consecutivoDia</param>
+                            <param id="1" name="Value">consecutivoDia + 1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="663603036947651" type="txtfinDia">
+                            <param id="0" name="Text">CFINDIA &amp;  &quot; &quot;  &amp; consecutivoDia</param>
+                        </action>
+                        <action id="0" name="Play" sid="714557791816951" type="Audio">
+                            <param id="0" name="Audio file">Finish1</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="163584814164506" type="System">
+                            <param id="0" name="Layer">&quot;modal_papiro&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="300887398446790" type="System">
+                            <param id="0" name="Layer">&quot;shadow&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="151838650467136" type="System">
+                            <param id="0" name="Seconds">5</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="872721094394720" type="System">
+                            <param id="0" name="Layer">&quot;modal_papiro&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="723195074689161" type="System">
+                            <param id="0" name="Layer">&quot;shadow&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="588014324506342" type="System">
+                            <param id="0" name="Variable">status</param>
+                            <param id="1" name="Value">&quot;Ocultando  papiro dia 2&quot;</param>
+                        </action>
+                        <action disabled="1" id="0" name="Play" sid="288851993993429" type="Audio">
                             <param id="0" name="Audio file">amazonas</param>
                             <param id="2" name="Loop">1</param>
                             <param id="3" name="Volume">0</param>

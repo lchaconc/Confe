@@ -393,6 +393,9 @@
             </object-type>
             <object-type name="granero" sid="654591830572873">
                 <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="activo" sid="839498355816006" type="boolean" />
+                </instance-variables>
                 <behaviors>
                     <behavior-type name="Solid" sid="543740423760964">
                         <behavior id="solid" />
@@ -588,6 +591,15 @@
             </object-type>
             <object-type name="oveja" sid="213118536265982">
                 <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="colision" sid="466862552162967" type="boolean" />
+                    <instance-variable name="activo" sid="474244602865090" type="boolean" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="Solid" sid="602025212082661">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="636019927833649" speed="5">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\mima\Desktop\CONFE\granja128w\granjaAsset 122128.png">
@@ -891,6 +903,22 @@
                     </animation>
                 </animation-folder>
             </object-type>
+            <object-type name="rasuradora" sid="154161326636569">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="activo" sid="177978765963443" type="boolean" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="Solid" sid="739305546810424">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="628236594952541" speed="5">
+                        <frame duration="1" hotspotX="0.504505" hotspotY="0.5" original-source="C:\Users\logan24\Desktop\assets\rasuradora.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
         </object-folder>
         <object-folder name="inventario">
             <object-type name="inv_axe" sid="734554926233979">
@@ -1104,6 +1132,10 @@
         <file name="Finish1.ogg" />
         <file name="vaca.m4a" />
         <file name="vaca.ogg" />
+        <file name="oveja.m4a" />
+        <file name="oveja.ogg" />
+        <file name="rasuradora.m4a" />
+        <file name="rasuradora.ogg" />
     </sounds-folder>
     <music-folder>
         <file name="timescapes.m4a" />

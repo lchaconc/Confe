@@ -27,7 +27,10 @@
                     <param id="0" name="Audio file">timescapes</param>
                 </action>
                 <action id="4" name="Preload" sid="684352516028997" type="Audio">
-                    <param id="0" name="Audio file">vaca</param>
+                    <param id="0" name="Audio file">oveja</param>
+                </action>
+                <action id="4" name="Preload" sid="623652326462644" type="Audio">
+                    <param id="0" name="Audio file">rasuradora</param>
                 </action>
             </actions>
         </event-block>
