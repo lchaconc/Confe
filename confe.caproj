@@ -228,6 +228,10 @@
                     </animation>
                 </animation-folder>
             </object-type>
+            <object-type name="bgVerdeOscuro" sid="470863083271250">
+                <plugin id="TiledBg" />
+                <texture />
+            </object-type>
         </object-folder>
         <object-folder name="system">
             <object-type name="Touch" sid="579146676650647">
@@ -1046,6 +1050,14 @@
             </object-type>
             <object-type name="txtConsignas" sid="633791259052584">
                 <plugin id="Text" />
+            </object-type>
+            <object-type name="jesus" sid="194553131822561">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="867494436945436" speed="5">
+                        <frame duration="1" hotspotX="0.50303" hotspotY="0.50303" original-source="C:\Users\logan24\Desktop\assets\jesus.png" />
+                    </animation>
+                </animation-folder>
             </object-type>
         </object-folder>
         <object-folder name="particulas">

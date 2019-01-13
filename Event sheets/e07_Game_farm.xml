@@ -1143,6 +1143,10 @@
                         <condition id="-25" name="On loader layout complete" sid="703592176193939" type="System" />
                     </conditions>
                     <actions>
+                        <action id="-4" name="Set layer visible" sid="721098402392132" type="System">
+                            <param id="0" name="Layer">&quot;shadow&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
                         <action id="-9" name="Set value" sid="240941407476784" type="System">
                             <param id="0" name="Variable">status</param>
                             <param id="1" name="Value">&quot;loaded&quot;</param>
@@ -1193,11 +1197,74 @@
                             <param id="0" name="Name">&quot;cargarTextoIntro&quot;</param>
                         </condition>
                     </conditions>
-                    <actions>
-                        <action id="0" name="Set text" sid="960978781374364" type="txtConsignas">
-                            <param id="0" name="Text">&quot;ddd&quot;</param>
-                        </action>
-                    </actions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="777440387762310">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="490018115421909" type="txtConsignas">
+                                    <param id="0" name="Unique ID">146</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Set position" sid="756553199983322" type="txtConsignas">
+                                    <param id="0" name="X">512</param>
+                                    <param id="1" name="Y">224</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="475050617839643" type="System">
+                                    <param id="0" name="Seconds">7</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="998492379373852" type="txtConsignas">
+                                    <param id="0" name="X">-320</param>
+                                    <param id="1" name="Y">-416</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="499641625731353" type="System">
+                                    <param id="0" name="Seconds">0.5</param>
+                                </action>
+                                <action id="0" name="Call function" sid="253659268167281" type="Function">
+                                    <param id="0" name="Name">&quot;cargarTextoConsigna1&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="660052030794260">
+                    <conditions>
+                        <condition id="0" name="On function" sid="198279132293542" type="Function">
+                            <param id="0" name="Name">&quot;cargarTextoConsigna1&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="610214629309443">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="124903703562713" type="txtConsignas">
+                                    <param id="0" name="Unique ID">147</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Set position" sid="892624172298289" type="txtConsignas">
+                                    <param id="0" name="X">512</param>
+                                    <param id="1" name="Y">224</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="612914179847104" type="System">
+                                    <param id="0" name="Seconds">7</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="127669567261885" type="txtConsignas">
+                                    <param id="0" name="X">-320</param>
+                                    <param id="1" name="Y">-416</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="580939187149392" type="System">
+                                    <param id="0" name="Layer">&quot;textos&quot;</param>
+                                    <param id="1" name="Visibility">0</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="746308065862093" type="System">
+                                    <param id="0" name="Layer">&quot;shadow&quot;</param>
+                                    <param id="1" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
             </sub-events>
         </event-group>
@@ -1231,6 +1298,10 @@
                 <event-block sid="646876171442314">
                     <conditions />
                     <actions>
+                        <action id="0" name="Call function" sid="123285955524951" type="Function">
+                            <param id="0" name="Name">&quot;cargarTextoIntro&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
                         <action id="-12" name="Set group active" sid="315955149890932" type="System">
                             <param id="0" name="Group name">&quot;loadArray&quot;</param>
                             <param id="1" name="State">0</param>
