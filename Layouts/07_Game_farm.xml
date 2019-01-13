@@ -129,26 +129,6 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="camino" uid="66">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <hotspot>Top-left</hotspot>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>576</x>
-                        <y>320</y>
-                        <z>0</z>
-                        <width>256</width>
-                        <height>64</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                        <angle>1.561404109</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
                 <instance type="limites" uid="4">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -262,6 +242,26 @@
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="camino" uid="66">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <hotspot>Top-left</hotspot>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>576</x>
+                        <y>320</y>
+                        <z>0</z>
+                        <width>256</width>
+                        <height>64</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>1.561404109</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
@@ -1327,7 +1327,8 @@
                     </properties>
                     <instance-variables>
                         <colision>false</colision>
-                        <activo>false</activo>
+                        <activoComida>false</activoComida>
+                        <activoOrdenar>false</activoOrdenar>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -2052,10 +2053,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1024</x>
+                        <x>1031</x>
                         <y>128</y>
                         <z>0</z>
-                        <width>82</width>
+                        <width>96</width>
                         <height>58</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
@@ -2697,8 +2698,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-160</x>
-                        <y>-384</y>
+                        <x>224</x>
+                        <y>-448</y>
                         <z>0</z>
                         <width>128</width>
                         <height>128</height>
@@ -2775,6 +2776,62 @@
                         <height>64</height>
                         <depth>0</depth>
                         <hotspotX>0.504504502</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="txtVisorDebug" uid="152">
+                    <properties>
+                        <text>test</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-26.4,400,0</font>
+                        <color>255,255,255</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>-1376</x>
+                        <y>-256</y>
+                        <z>0</z>
+                        <width>1184</width>
+                        <height>128</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="baldeVacio" uid="154">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>352</x>
+                        <y>928</y>
+                        <z>0</z>
+                        <width>67</width>
+                        <height>90</height>
+                        <depth>0</depth>
+                        <hotspotX>0.50746268</hotspotX>
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
@@ -2912,7 +2969,8 @@
                     </properties>
                     <instance-variables>
                         <colision>false</colision>
-                        <activo>false</activo>
+                        <activoRegado1>false</activoRegado1>
+                        <activoRegado2>false</activoRegado2>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -3546,7 +3604,7 @@
                 </instance>
                 <instance type="txtConsignas" uid="146">
                     <properties>
-                        <text>INTRO</text>
+                        <text>Espera un momento...</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-24,400,0</font>
                         <color>255,255,255</color>
@@ -3559,8 +3617,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-416</x>
-                        <y>-384</y>
+                        <x>480</x>
+                        <y>224</y>
                         <z>0</z>
                         <width>448</width>
                         <height>160</height>
@@ -3573,7 +3631,7 @@
                 </instance>
                 <instance type="txtConsignas" uid="147">
                     <properties>
-                        <text>INTRO</text>
+                        <text>...</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-24,400,0</font>
                         <color>255,255,255</color>
@@ -3586,8 +3644,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-320</x>
-                        <y>-416</y>
+                        <x>-576</x>
+                        <y>-352</y>
                         <z>0</z>
                         <width>448</width>
                         <height>160</height>
@@ -3600,10 +3658,10 @@
                 </instance>
                 <instance type="txtConsignas" uid="148">
                     <properties>
-                        <text>INTRO</text>
+                        <text>Espera un momento...</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-24,400,0</font>
-                        <color>0,0,0</color>
+                        <color>255,153,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
                         <hotspot>Top-left</hotspot>
@@ -3613,8 +3671,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>0</x>
-                        <y>-352</y>
+                        <x>-320</x>
+                        <y>-320</y>
                         <z>0</z>
                         <width>448</width>
                         <height>160</height>
@@ -3627,7 +3685,7 @@
                 </instance>
                 <instance type="txtConsignas" uid="149">
                     <properties>
-                        <text>INTRO</text>
+                        <text>...</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-24,400,0</font>
                         <color>255,255,255</color>
@@ -3640,8 +3698,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-352</x>
-                        <y>-256</y>
+                        <x>-576</x>
+                        <y>384</y>
                         <z>0</z>
                         <width>448</width>
                         <height>160</height>
@@ -3670,6 +3728,82 @@
                         <depth>0</depth>
                         <hotspotX>0.5030303</hotspotX>
                         <hotspotY>0.5030303</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="btnAceptar" uid="153">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>608</x>
+                        <y>448</y>
+                        <z>0</z>
+                        <width>93</width>
+                        <height>42</height>
+                        <depth>0</depth>
+                        <hotspotX>0.505376339</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="txtConsignas" uid="155">
+                    <properties>
+                        <text>...</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-24,400,0</font>
+                        <color>255,255,255</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>-576</x>
+                        <y>96</y>
+                        <z>0</z>
+                        <width>448</width>
+                        <height>160</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="txtConsignas" uid="156">
+                    <properties>
+                        <text>Espera un momento...</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-24,400,0</font>
+                        <color>255,153,0</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>-576</x>
+                        <y>-224</y>
+                        <z>0</z>
+                        <width>448</width>
+                        <height>160</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

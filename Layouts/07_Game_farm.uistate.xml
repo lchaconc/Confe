@@ -4,11 +4,11 @@
 It is entirely optional and the project will load without it.  If you are placing the project under source control,
 you probably do not want to add any .uistate.xml files to the repository.-->
     <camera>
-        <position-x>723.916</position-x>
-        <position-y>280.267</position-y>
-        <position-z>214.359</position-z>
-        <lookat-x>723.916</lookat-x>
-        <lookat-y>280.267</lookat-y>
+        <position-x>759.26</position-x>
+        <position-y>445.046</position-y>
+        <position-z>132</position-z>
+        <lookat-x>759.26</lookat-x>
+        <lookat-y>445.046</lookat-y>
         <lookat-z>0</lookat-z>
     </camera>
     <snap-to-grid>1</snap-to-grid>
@@ -27,11 +27,11 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <layers>
         <layer locked="1" name="bg" parallax-in-editor="0" visible="1" />
         <layer locked="1" name="main" parallax-in-editor="0" visible="1" />
-        <layer locked="1" name="sprites" parallax-in-editor="0" visible="1" />
-        <layer locked="1" name="controls" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="sprites" parallax-in-editor="0" visible="1" />
+        <layer locked="1" name="controls" parallax-in-editor="0" visible="0" />
         <layer locked="1" name="shadow" parallax-in-editor="0" visible="0" />
-        <layer locked="1" name="modal_inv" parallax-in-editor="0" visible="0" />
+        <layer locked="0" name="modal_inv" parallax-in-editor="0" visible="0" />
         <layer locked="1" name="modal_papiro" parallax-in-editor="0" visible="0" />
-        <layer locked="0" name="textos" parallax-in-editor="0" visible="1" />
+        <layer locked="1" name="textos" parallax-in-editor="0" visible="0" />
     </layers>
 </c2uistate>
