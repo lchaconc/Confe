@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>e07_Game_farm</name>
     <events>
+        <variable constant="1" name="URLTXTINTROS" sid="133953060642819" static="0" type="text">http://localhost/confe_server/getscores.php</variable>
         <variable comment="dias que va completando la misión 1 = primer día" constant="0" name="consecutivoDia" sid="517144503279101" static="0" type="number">0</variable>
         <variable constant="1" name="cFinDia" sid="378310848182712" static="0" type="text">¡Felicidades! Has completado la misión del día </variable>
         <variable constant="0" name="status" sid="136760279146205" static="0" type="text">nulo</variable>
@@ -1145,6 +1146,94 @@
                         <action id="-9" name="Set value" sid="240941407476784" type="System">
                             <param id="0" name="Variable">status</param>
                             <param id="1" name="Value">&quot;loaded&quot;</param>
+                        </action>
+                        <action id="0" name="Call function" sid="801053914971281" type="Function">
+                            <param id="0" name="Name">&quot;LoadAjax&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="759214904434431" title="Ajax">
+            <sub-events>
+                <event-block sid="534939463439349">
+                    <conditions>
+                        <condition id="0" name="On function" sid="610541982447960" type="Function">
+                            <param id="0" name="Name">&quot;LoadAjax&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Request URL" sid="153511178068682" type="AJAX">
+                            <param id="0" name="Tag">&quot;introTextsFarm&quot;</param>
+                            <param id="1" name="URL">URLTXTINTROS</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="379588097169541">
+                    <conditions>
+                        <condition id="0" name="On completed" sid="765293968385561" type="AJAX">
+                            <param id="0" name="Tag">&quot;introTextsFarm&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Set group active" sid="652416013468281" type="System">
+                            <param id="0" name="Group name">&quot;loadArray&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="796789269403613" title="Cargar_textos">
+            <sub-events>
+                <event-block sid="474253020563310">
+                    <conditions>
+                        <condition id="0" name="On function" sid="566124649957659" type="Function">
+                            <param id="0" name="Name">&quot;cargarTextoIntro&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="960978781374364" type="txtConsignas">
+                            <param id="0" name="Text">&quot;ddd&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" inactive="1" sid="870653898091128" title="loadArray">
+            <sub-events>
+                <event-block sid="291253591188365">
+                    <conditions>
+                        <condition id="3" name="For each element" sid="324543032437973" type="Array">
+                            <param id="0" name="Axes">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="2" name="Set at X" sid="811339782077612" type="Array">
+                            <param id="0" name="X">Array.CurX</param>
+                            <param id="1" name="Value">tokenat(Ajax.LastData, Array.CurX, &quot;|&quot;)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="921630987098577">
+                    <conditions>
+                        <condition id="-11" name="For Each" sid="392333686408354" type="System">
+                            <param id="0" name="Object">txtConsignas</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="565682331835922" type="txtConsignas">
+                            <param id="0" name="Text">Array.At(txtConsignas.IID)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="646876171442314">
+                    <conditions />
+                    <actions>
+                        <action id="-12" name="Set group active" sid="315955149890932" type="System">
+                            <param id="0" name="Group name">&quot;loadArray&quot;</param>
+                            <param id="1" name="State">0</param>
                         </action>
                     </actions>
                 </event-block>
