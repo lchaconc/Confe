@@ -3,7 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>e07_Game_farm</name>
     <events>
-        <variable constant="1" name="URLTXTINTROS" sid="133953060642819" static="0" type="text">http://localhost/confe_server/getscores.php</variable>
+        <variable constant="1" name="URLTXTINTROS" sid="133953060642819" static="0" type="text">http://construtecdeleste.com/test/confe_server/get_txt1.php</variable>
         <variable comment="dias que va completando la misión 1 = primer día" constant="0" name="consecutivoDia" sid="517144503279101" static="0" type="number">0</variable>
         <variable constant="1" name="cFinDia" sid="378310848182712" static="0" type="text">¡Felicidades! Has completado la misión del día </variable>
         <variable constant="0" name="status" sid="136760279146205" static="0" type="text">nulo</variable>
