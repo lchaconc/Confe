@@ -148,6 +148,10 @@
                             <param id="1" name="Layer">&quot;main&quot;</param>
                             <param id="2" name="Image point">0</param>
                         </action>
+                        <action id="-9" name="Set value" sid="788884853482361" type="System">
+                            <param id="0" name="Variable">status</param>
+                            <param id="1" name="Value">&quot;arbol cortado&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="737611550526027">
@@ -196,6 +200,10 @@
                             <param id="0" name="Name">&quot;abrirPapiro&quot;</param>
                             <param id="1" name="Parameter {n}"></param>
                         </action>
+                        <action id="-9" name="Set value" sid="957506089156567" type="System">
+                            <param id="0" name="Variable">status</param>
+                            <param id="1" name="Value">&quot;huerto sembrado&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="207495070444908">
@@ -232,6 +240,10 @@
                         <action id="-13" name="Set boolean" sid="155290316776314" type="arena">
                             <param id="0" name="Instance variable">activo</param>
                             <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="794628288522004" type="System">
+                            <param id="0" name="Variable">status</param>
+                            <param id="1" name="Value">&quot;Arena agregada&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -274,6 +286,10 @@
                             <param id="0" name="Instance variable">activoRegado1</param>
                             <param id="1" name="Value">1</param>
                         </action>
+                        <action id="-9" name="Set value" sid="433945873266499" type="System">
+                            <param id="0" name="Variable">status</param>
+                            <param id="1" name="Value">&quot;Huerta regada 1&quot;</param>
+                        </action>
                         <action id="0" name="Call function" sid="611280268257753" type="Function">
                             <param id="0" name="Name">&quot;abrirPapiro2&quot;</param>
                             <param id="1" name="Parameter {n}"></param>
@@ -311,6 +327,10 @@
                         <action id="-13" name="Set boolean" sid="210906625734951" type="cow2">
                             <param id="0" name="Instance variable">activoComida</param>
                             <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="132497406605323" type="System">
+                            <param id="0" name="Variable">status</param>
+                            <param id="1" name="Value">&quot;Vacas alimentadas&quot;</param>
                         </action>
                         <action id="0" name="Call function" sid="483499869634596" type="Function">
                             <param id="0" name="Name">&quot;abrirPapiro2&quot;</param>
@@ -358,6 +378,10 @@
                         <action id="-13" name="Set boolean" sid="733052919395932" type="oveja">
                             <param id="0" name="Instance variable">activo</param>
                             <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="569281198775564" type="System">
+                            <param id="0" name="Variable">status</param>
+                            <param id="1" name="Value">&quot;Oveja trasquilada&quot;</param>
                         </action>
                         <action id="0" name="Call function" sid="591025297273026" type="Function">
                             <param id="0" name="Name">&quot;abrirPapiro3&quot;</param>
@@ -469,6 +493,10 @@
                             <param id="3" name="Volume">0</param>
                             <param id="1" name="Tag (optional)">&quot;corte&quot;</param>
                         </action>
+                        <action id="-9" name="Set value" sid="837836346784946" type="System">
+                            <param id="0" name="Variable">status</param>
+                            <param id="1" name="Value">&quot;VAca ordeñanada&quot;</param>
+                        </action>
                         <action id="0" name="Call function" sid="301363041355636" type="Function">
                             <param id="0" name="Name">&quot;abrirPapiro4&quot;</param>
                             <param id="1" name="Parameter {n}"></param>
@@ -510,6 +538,10 @@
                         <action id="-13" name="Set boolean" sid="770949856108101" type="sensorHuerta">
                             <param id="0" name="Instance variable">activoRegado2</param>
                             <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="733414502207196" type="System">
+                            <param id="0" name="Variable">status</param>
+                            <param id="1" name="Value">&quot;Huerta regada 2&quot;</param>
                         </action>
                         <action id="0" name="Call function" sid="251016348951230" type="Function">
                             <param id="0" name="Name">&quot;abrirPapiro4&quot;</param>
@@ -614,6 +646,12 @@
                         </action>
                         <action id="-15" name="Set visible" sid="201312480834405" type="inv_regadera">
                             <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="278568658114752" type="Audio">
+                            <param id="0" name="Audio file">obtenido</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;obtenido&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -1224,7 +1262,7 @@
                         </action>
                         <action id="-9" name="Set value" sid="588014324506342" type="System">
                             <param id="0" name="Variable">status</param>
-                            <param id="1" name="Value">&quot;Ocultando  papiro dia 2&quot;</param>
+                            <param id="1" name="Value">&quot;Ocultando  papiro dia 3&quot;</param>
                         </action>
                         <action disabled="1" id="0" name="Play" sid="288851993993429" type="Audio">
                             <param id="0" name="Audio file">amazonas</param>
@@ -1257,7 +1295,7 @@
                     <actions>
                         <action id="-9" name="Set value" sid="257730315303058" type="System">
                             <param id="0" name="Variable">status</param>
-                            <param id="1" name="Value">&quot;fin dia 2&quot;</param>
+                            <param id="1" name="Value">&quot;fin dia 4&quot;</param>
                         </action>
                         <action id="-16" name="Wait" sid="586638675365725" type="System">
                             <param id="0" name="Seconds">3</param>
@@ -1267,7 +1305,7 @@
                         </action>
                         <action id="-9" name="Set value" sid="801708346487377" type="System">
                             <param id="0" name="Variable">status</param>
-                            <param id="1" name="Value">&quot;Mostrando papiro dia 2&quot;</param>
+                            <param id="1" name="Value">&quot;Mostrando papiro dia 4&quot;</param>
                         </action>
                         <action id="-9" name="Set value" sid="750775804703028" type="System">
                             <param id="0" name="Variable">consecutivoDia</param>
@@ -1291,7 +1329,7 @@
                             <param id="1" name="Visibility">1</param>
                         </action>
                         <action id="-16" name="Wait" sid="602588738958943" type="System">
-                            <param id="0" name="Seconds">5</param>
+                            <param id="0" name="Seconds">3</param>
                         </action>
                         <action id="-4" name="Set layer visible" sid="402237663683561" type="System">
                             <param id="0" name="Layer">&quot;modal_papiro&quot;</param>
@@ -1303,7 +1341,7 @@
                         </action>
                         <action id="-9" name="Set value" sid="744077109815703" type="System">
                             <param id="0" name="Variable">status</param>
-                            <param id="1" name="Value">&quot;Ocultando  papiro dia 2&quot;</param>
+                            <param id="1" name="Value">&quot;Ocultando  papiro dia 4&quot;</param>
                         </action>
                         <action disabled="1" id="0" name="Play" sid="927251864173611" type="Audio">
                             <param id="0" name="Audio file">amazonas</param>
@@ -1312,7 +1350,7 @@
                             <param id="1" name="Tag (optional)">&quot;ambiente&quot;</param>
                         </action>
                         <action id="0" name="Call function" sid="308229344184466" type="Function">
-                            <param id="0" name="Name">&quot;cargarTextoConsigna4&quot;</param>
+                            <param id="0" name="Name">&quot;cargarTextoConsigna5&quot;</param>
                             <param id="1" name="Parameter {n}"></param>
                         </action>
                     </actions>
@@ -1497,7 +1535,7 @@
                         <event-block sid="952919722025086">
                             <conditions>
                                 <condition id="-14" name="Pick by unique ID" sid="232850972891660" type="txtConsignas">
-                                    <param id="0" name="Unique ID">148</param>
+                                    <param id="0" name="Unique ID">149</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -1535,7 +1573,7 @@
                         <event-block sid="628696972575404">
                             <conditions>
                                 <condition id="-14" name="Pick by unique ID" sid="338423204616724" type="txtConsignas">
-                                    <param id="0" name="Unique ID">149</param>
+                                    <param id="0" name="Unique ID">155</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -1573,7 +1611,7 @@
                         <event-block sid="807125047538610">
                             <conditions>
                                 <condition id="-14" name="Pick by unique ID" sid="334877700923588" type="txtConsignas">
-                                    <param id="0" name="Unique ID">155</param>
+                                    <param id="0" name="Unique ID">148</param>
                                 </condition>
                             </conditions>
                             <actions>
