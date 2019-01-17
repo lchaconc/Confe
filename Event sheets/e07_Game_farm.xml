@@ -1472,209 +1472,167 @@
                         <condition id="0" name="On function" sid="566124649957659" type="Function">
                             <param id="0" name="Name">&quot;cargarTextoIntro&quot;</param>
                         </condition>
+                        <condition id="-14" name="Pick by unique ID" sid="218576839974949" type="txtInstruccionesDia">
+                            <param id="0" name="Unique ID">146</param>
+                        </condition>
                     </conditions>
-                    <actions />
-                    <sub-events>
-                        <event-block sid="777440387762310">
-                            <conditions>
-                                <condition id="-14" name="Pick by unique ID" sid="490018115421909" type="txtConsignas">
-                                    <param id="0" name="Unique ID">146</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-9" name="Set value" sid="467312373963048" type="System">
-                                    <param id="0" name="Variable">status</param>
-                                    <param id="1" name="Value">&quot;text intro&quot;</param>
-                                </action>
-                                <action id="-3" name="Set position" sid="756553199983322" type="txtConsignas">
-                                    <param id="0" name="X">512</param>
-                                    <param id="1" name="Y">224</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
+                    <actions>
+                        <action id="-9" name="Set value" sid="467312373963048" type="System">
+                            <param id="0" name="Variable">status</param>
+                            <param id="1" name="Value">&quot;text intro&quot;</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="756553199983322" type="txtInstruccionesDia">
+                            <param id="0" name="X">512</param>
+                            <param id="1" name="Y">224</param>
+                        </action>
+                    </actions>
                 </event-block>
                 <event-block sid="660052030794260">
                     <conditions>
                         <condition id="0" name="On function" sid="198279132293542" type="Function">
                             <param id="0" name="Name">&quot;cargarTextoConsigna1&quot;</param>
                         </condition>
+                        <condition id="-14" name="Pick by unique ID" sid="775342126542322" type="txtInstruccionesDia">
+                            <param id="0" name="Unique ID">147</param>
+                        </condition>
                     </conditions>
-                    <actions />
-                    <sub-events>
-                        <event-block sid="610214629309443">
-                            <conditions>
-                                <condition id="-14" name="Pick by unique ID" sid="124903703562713" type="txtConsignas">
-                                    <param id="0" name="Unique ID">147</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-3" name="Set position" sid="892624172298289" type="txtConsignas">
-                                    <param id="0" name="X">512</param>
-                                    <param id="1" name="Y">224</param>
-                                </action>
-                                <action id="-16" name="Wait" sid="100643231022729" type="System">
-                                    <param id="0" name="Seconds">0.5</param>
-                                </action>
-                                <action id="-9" name="Set value" sid="148650684372361" type="System">
-                                    <param id="0" name="Variable">status</param>
-                                    <param id="1" name="Value">&quot;text consigna1&quot;</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
+                    <actions>
+                        <action id="-3" name="Set position" sid="757684433699995" type="txtInstruccionesDia">
+                            <param id="0" name="X">512</param>
+                            <param id="1" name="Y">224</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="100643231022729" type="System">
+                            <param id="0" name="Seconds">0.2</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="148650684372361" type="System">
+                            <param id="0" name="Variable">status</param>
+                            <param id="1" name="Value">&quot;text consigna1&quot;</param>
+                        </action>
+                    </actions>
                 </event-block>
                 <event-block sid="634440117969043">
                     <conditions>
                         <condition id="0" name="On function" sid="553735547854346" type="Function">
                             <param id="0" name="Name">&quot;cargarTextoConsigna2&quot;</param>
                         </condition>
+                        <condition id="-14" name="Pick by unique ID" sid="286355631313182" type="txtInstruccionesDia">
+                            <param id="0" name="Unique ID">148</param>
+                        </condition>
                     </conditions>
-                    <actions />
-                    <sub-events>
-                        <event-block sid="952919722025086">
-                            <conditions>
-                                <condition id="-14" name="Pick by unique ID" sid="232850972891660" type="txtConsignas">
-                                    <param id="0" name="Unique ID">149</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-3" name="Set position" sid="853254606711681" type="txtConsignas">
-                                    <param id="0" name="X">512</param>
-                                    <param id="1" name="Y">224</param>
-                                </action>
-                                <action id="-4" name="Set layer visible" sid="606694299145989" type="System">
-                                    <param id="0" name="Layer">&quot;textos&quot;</param>
-                                    <param id="1" name="Visibility">1</param>
-                                </action>
-                                <action id="-4" name="Set layer visible" sid="486660322983143" type="System">
-                                    <param id="0" name="Layer">&quot;shadow&quot;</param>
-                                    <param id="1" name="Visibility">1</param>
-                                </action>
-                                <action id="-16" name="Wait" sid="162424491328366" type="System">
-                                    <param id="0" name="Seconds">0.5</param>
-                                </action>
-                                <action id="-9" name="Set value" sid="608150141332204" type="System">
-                                    <param id="0" name="Variable">status</param>
-                                    <param id="1" name="Value">&quot;text consigna2&quot;</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
+                    <actions>
+                        <action id="-3" name="Set position" sid="632874949612599" type="txtInstruccionesDia">
+                            <param id="0" name="X">512</param>
+                            <param id="1" name="Y">224</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="606694299145989" type="System">
+                            <param id="0" name="Layer">&quot;textos&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="486660322983143" type="System">
+                            <param id="0" name="Layer">&quot;shadow&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="162424491328366" type="System">
+                            <param id="0" name="Seconds">0.4</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="608150141332204" type="System">
+                            <param id="0" name="Variable">status</param>
+                            <param id="1" name="Value">&quot;text consigna2&quot;</param>
+                        </action>
+                    </actions>
                 </event-block>
                 <event-block sid="965449512199048">
                     <conditions>
                         <condition id="0" name="On function" sid="982172235825623" type="Function">
                             <param id="0" name="Name">&quot;cargarTextoConsigna3&quot;</param>
                         </condition>
+                        <condition id="-14" name="Pick by unique ID" sid="225290089075933" type="txtInstruccionesDia">
+                            <param id="0" name="Unique ID">149</param>
+                        </condition>
                     </conditions>
-                    <actions />
-                    <sub-events>
-                        <event-block sid="628696972575404">
-                            <conditions>
-                                <condition id="-14" name="Pick by unique ID" sid="338423204616724" type="txtConsignas">
-                                    <param id="0" name="Unique ID">155</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-3" name="Set position" sid="230513802639205" type="txtConsignas">
-                                    <param id="0" name="X">512</param>
-                                    <param id="1" name="Y">224</param>
-                                </action>
-                                <action id="-4" name="Set layer visible" sid="276578465248906" type="System">
-                                    <param id="0" name="Layer">&quot;textos&quot;</param>
-                                    <param id="1" name="Visibility">1</param>
-                                </action>
-                                <action id="-4" name="Set layer visible" sid="750810345014235" type="System">
-                                    <param id="0" name="Layer">&quot;shadow&quot;</param>
-                                    <param id="1" name="Visibility">1</param>
-                                </action>
-                                <action id="-16" name="Wait" sid="529263368049049" type="System">
-                                    <param id="0" name="Seconds">0.5</param>
-                                </action>
-                                <action id="-9" name="Set value" sid="939856228185423" type="System">
-                                    <param id="0" name="Variable">status</param>
-                                    <param id="1" name="Value">&quot;text consigna3&quot;</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
+                    <actions>
+                        <action id="-3" name="Set position" sid="605779610973688" type="txtInstruccionesDia">
+                            <param id="0" name="X">512</param>
+                            <param id="1" name="Y">224</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="276578465248906" type="System">
+                            <param id="0" name="Layer">&quot;textos&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="750810345014235" type="System">
+                            <param id="0" name="Layer">&quot;shadow&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="529263368049049" type="System">
+                            <param id="0" name="Seconds">0.6</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="939856228185423" type="System">
+                            <param id="0" name="Variable">status</param>
+                            <param id="1" name="Value">&quot;text consigna3&quot;</param>
+                        </action>
+                    </actions>
                 </event-block>
                 <event-block sid="591815337217468">
                     <conditions>
                         <condition id="0" name="On function" sid="670593258684687" type="Function">
                             <param id="0" name="Name">&quot;cargarTextoConsigna4&quot;</param>
                         </condition>
+                        <condition id="-14" name="Pick by unique ID" sid="986276579916972" type="txtInstruccionesDia">
+                            <param id="0" name="Unique ID">155</param>
+                        </condition>
                     </conditions>
-                    <actions />
-                    <sub-events>
-                        <event-block sid="807125047538610">
-                            <conditions>
-                                <condition id="-14" name="Pick by unique ID" sid="334877700923588" type="txtConsignas">
-                                    <param id="0" name="Unique ID">148</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-3" name="Set position" sid="560712377072576" type="txtConsignas">
-                                    <param id="0" name="X">512</param>
-                                    <param id="1" name="Y">224</param>
-                                </action>
-                                <action id="-4" name="Set layer visible" sid="881344427409438" type="System">
-                                    <param id="0" name="Layer">&quot;textos&quot;</param>
-                                    <param id="1" name="Visibility">1</param>
-                                </action>
-                                <action id="-4" name="Set layer visible" sid="281757227875526" type="System">
-                                    <param id="0" name="Layer">&quot;shadow&quot;</param>
-                                    <param id="1" name="Visibility">1</param>
-                                </action>
-                                <action id="-16" name="Wait" sid="319178337789164" type="System">
-                                    <param id="0" name="Seconds">0.5</param>
-                                </action>
-                                <action id="-9" name="Set value" sid="143674295607356" type="System">
-                                    <param id="0" name="Variable">status</param>
-                                    <param id="1" name="Value">&quot;text consigna4&quot;</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
+                    <actions>
+                        <action id="-3" name="Set position" sid="365481512808236" type="txtInstruccionesDia">
+                            <param id="0" name="X">512</param>
+                            <param id="1" name="Y">224</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="881344427409438" type="System">
+                            <param id="0" name="Layer">&quot;textos&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="281757227875526" type="System">
+                            <param id="0" name="Layer">&quot;shadow&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="319178337789164" type="System">
+                            <param id="0" name="Seconds">0.8</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="143674295607356" type="System">
+                            <param id="0" name="Variable">status</param>
+                            <param id="1" name="Value">&quot;text consigna4&quot;</param>
+                        </action>
+                    </actions>
                 </event-block>
                 <event-block sid="239236196796605">
                     <conditions>
                         <condition id="0" name="On function" sid="546956670473310" type="Function">
                             <param id="0" name="Name">&quot;cargarTextoConsigna5&quot;</param>
                         </condition>
+                        <condition id="-14" name="Pick by unique ID" sid="202010438490211" type="txtInstruccionesDia">
+                            <param id="0" name="Unique ID">155</param>
+                        </condition>
                     </conditions>
-                    <actions />
-                    <sub-events>
-                        <event-block sid="638024759377591">
-                            <conditions>
-                                <condition id="-14" name="Pick by unique ID" sid="542642456784584" type="txtConsignas">
-                                    <param id="0" name="Unique ID">156</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-3" name="Set position" sid="726232993267624" type="txtConsignas">
-                                    <param id="0" name="X">512</param>
-                                    <param id="1" name="Y">224</param>
-                                </action>
-                                <action id="-4" name="Set layer visible" sid="475370855068374" type="System">
-                                    <param id="0" name="Layer">&quot;textos&quot;</param>
-                                    <param id="1" name="Visibility">1</param>
-                                </action>
-                                <action id="-4" name="Set layer visible" sid="472082767111621" type="System">
-                                    <param id="0" name="Layer">&quot;shadow&quot;</param>
-                                    <param id="1" name="Visibility">1</param>
-                                </action>
-                                <action id="-16" name="Wait" sid="317253561555365" type="System">
-                                    <param id="0" name="Seconds">0.5</param>
-                                </action>
-                                <action id="-9" name="Set value" sid="858436439248144" type="System">
-                                    <param id="0" name="Variable">status</param>
-                                    <param id="1" name="Value">&quot;text consigna5&quot;</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
+                    <actions>
+                        <action id="-3" name="Set position" sid="694328352621784" type="txtInstruccionesDia">
+                            <param id="0" name="X">512</param>
+                            <param id="1" name="Y">224</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="475370855068374" type="System">
+                            <param id="0" name="Layer">&quot;textos&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="472082767111621" type="System">
+                            <param id="0" name="Layer">&quot;shadow&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="317253561555365" type="System">
+                            <param id="0" name="Seconds">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="858436439248144" type="System">
+                            <param id="0" name="Variable">status</param>
+                            <param id="1" name="Value">&quot;text consigna5&quot;</param>
+                        </action>
+                    </actions>
                 </event-block>
             </sub-events>
         </event-group>
@@ -1693,15 +1651,15 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="921630987098577">
+                <event-block sid="345852489273702">
                     <conditions>
-                        <condition id="-11" name="For Each" sid="392333686408354" type="System">
-                            <param id="0" name="Object">txtConsignas</param>
+                        <condition id="-11" name="For Each" sid="446302855855004" type="System">
+                            <param id="0" name="Object">txtInstruccionesDia</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="0" name="Set text" sid="565682331835922" type="txtConsignas">
-                            <param id="0" name="Text">Array.At(txtConsignas.IID)</param>
+                        <action id="0" name="Set text" sid="423633343509009" type="txtInstruccionesDia">
+                            <param id="0" name="Text">Array.At(txtInstruccionesDia.IID)</param>
                         </action>
                     </actions>
                 </event-block>
@@ -1739,7 +1697,7 @@
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-3" name="Set position" sid="998492379373852" type="txtConsignas">
+                                <action id="-3" name="Set position" sid="135409676192036" type="txtInstruccionesDia">
                                     <param id="0" name="X">-320</param>
                                     <param id="1" name="Y">-416</param>
                                 </action>
@@ -1766,7 +1724,7 @@
                                     <param id="0" name="Layer">&quot;shadow&quot;</param>
                                     <param id="1" name="Visibility">0</param>
                                 </action>
-                                <action id="-3" name="Set position" sid="127669567261885" type="txtConsignas">
+                                <action id="-3" name="Set position" sid="672984921724506" type="txtInstruccionesDia">
                                     <param id="0" name="X">-320</param>
                                     <param id="1" name="Y">-416</param>
                                 </action>
@@ -1793,7 +1751,7 @@
                                     <param id="0" name="Layer">&quot;shadow&quot;</param>
                                     <param id="1" name="Visibility">0</param>
                                 </action>
-                                <action id="-3" name="Set position" sid="149356462421774" type="txtConsignas">
+                                <action id="-3" name="Set position" sid="655239163310649" type="txtInstruccionesDia">
                                     <param id="0" name="X">-320</param>
                                     <param id="1" name="Y">-416</param>
                                 </action>
@@ -1820,7 +1778,7 @@
                                     <param id="0" name="Layer">&quot;shadow&quot;</param>
                                     <param id="1" name="Visibility">0</param>
                                 </action>
-                                <action id="-3" name="Set position" sid="483785309846259" type="txtConsignas">
+                                <action id="-3" name="Set position" sid="687835571593669" type="txtInstruccionesDia">
                                     <param id="0" name="X">-320</param>
                                     <param id="1" name="Y">-416</param>
                                 </action>
@@ -1847,7 +1805,7 @@
                                     <param id="0" name="Layer">&quot;shadow&quot;</param>
                                     <param id="1" name="Visibility">0</param>
                                 </action>
-                                <action id="-3" name="Set position" sid="674563625041780" type="txtConsignas">
+                                <action id="-3" name="Set position" sid="918153592807181" type="txtInstruccionesDia">
                                     <param id="0" name="X">-320</param>
                                     <param id="1" name="Y">-416</param>
                                 </action>
