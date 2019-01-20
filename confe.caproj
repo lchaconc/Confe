@@ -17,7 +17,6 @@
         <plugin author="Scirra" id="Particles" version="1">Particles</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
-        <plugin author="Scirra" id="TextBox" version="1">Text box</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
     </used-plugins>
@@ -960,6 +959,40 @@
                     </animation>
                 </animation-folder>
             </object-type>
+            <object-type name="mesa_rustica" sid="518908669597561">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="colision" sid="789410520578214" type="boolean" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="Solid" sid="763196872200118">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="380668046707099" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.502513" original-source="C:\Users\logan24\Desktop\assets\mesa.png">
+                            <collision-poly>
+                                <point x="0.120438" y="0.231156" />
+                                <point x="1" y="0" />
+                                <point x="0.726277" y="0.552763" />
+                                <point x="0.0583942" y="0.80402" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="queso" sid="378984993050325">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="activo" sid="428292799349614" type="boolean" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="147598613931246" speed="5">
+                        <frame duration="1" hotspotX="0.503546" hotspotY="0.5" original-source="C:\Users\logan24\Desktop\assets\queso.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
         </object-folder>
         <object-folder name="inventario">
             <object-type name="inv_axe" sid="734554926233979">
@@ -1093,9 +1126,6 @@
             </object-type>
             <object-type name="txtInstruccionesDia" sid="237794363881362">
                 <plugin id="Text" />
-            </object-type>
-            <object-type name="textoTmp" sid="161858185081731">
-                <plugin id="TextBox" />
             </object-type>
         </object-folder>
         <object-folder name="particulas">
