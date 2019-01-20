@@ -3210,33 +3210,6 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="txtVisorDebug" uid="152">
-                    <properties>
-                        <text>test</text>
-                        <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-26.4,400,0</font>
-                        <color>255,255,255</color>
-                        <horizontal-alignment>Left</horizontal-alignment>
-                        <vertical-alignment>Top</vertical-alignment>
-                        <hotspot>Top-left</hotspot>
-                        <wrapping>Word</wrapping>
-                        <line-height>0</line-height>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>-1376</x>
-                        <y>-256</y>
-                        <z>0</z>
-                        <width>1184</width>
-                        <height>128</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
                 <instance type="baldeVacio" uid="154">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -3343,6 +3316,33 @@
                         <z>0</z>
                         <width>288</width>
                         <height>96</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="txtVisorDebug" uid="152">
+                    <properties>
+                        <text>test BEBUG</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-29.6,400,0</font>
+                        <color>255,255,255</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>224</x>
+                        <y>32</y>
+                        <z>0</z>
+                        <width>1184</width>
+                        <height>128</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>

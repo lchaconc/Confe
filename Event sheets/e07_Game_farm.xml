@@ -4,6 +4,7 @@
     <name>e07_Game_farm</name>
     <events>
         <variable constant="1" name="URLTXTINTROS" sid="133953060642819" static="0" type="text">http://construtecdeleste.com/test/confe_server/get_txt1.php</variable>
+        <variable constant="1" name="URLGUARDARDIA" sid="923403895803467" static="0" type="text">http://construtecdeleste.com/test/confe_server/actualizar_dia.php?</variable>
         <variable comment="dias que va completando la misión 1 = primer día" constant="0" name="consecutivoDia" sid="517144503279101" static="0" type="number">3</variable>
         <variable constant="1" name="cFinDia" sid="378310848182712" static="0" type="text">¡Felicidades! Has completado la misión del día </variable>
         <variable constant="0" name="status" sid="136760279146205" static="0" type="text">nulo</variable>
@@ -1259,6 +1260,10 @@
                             <param id="3" name="Volume">0</param>
                             <param id="1" name="Tag (optional)">&quot;ambiente2&quot;</param>
                         </action>
+                        <action id="0" name="Call function" sid="650563230888358" type="Function">
+                            <param id="0" name="Name">&quot;ajaxGuardarDia&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
                         <action id="0" name="Call function" sid="830434035902279" type="Function">
                             <param id="0" name="Name">&quot;cargarTextoConsigna2&quot;</param>
                             <param id="1" name="Parameter {n}"></param>
@@ -1330,6 +1335,10 @@
                             <param id="3" name="Volume">0</param>
                             <param id="1" name="Tag (optional)">&quot;ambiente&quot;</param>
                         </action>
+                        <action id="0" name="Call function" sid="930518358593460" type="Function">
+                            <param id="0" name="Name">&quot;ajaxGuardarDia&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
                         <action id="0" name="Call function" sid="841074349412992" type="Function">
                             <param id="0" name="Name">&quot;cargarTextoConsigna3&quot;</param>
                             <param id="1" name="Parameter {n}"></param>
@@ -1400,6 +1409,10 @@
                             <param id="2" name="Loop">1</param>
                             <param id="3" name="Volume">0</param>
                             <param id="1" name="Tag (optional)">&quot;ambiente&quot;</param>
+                        </action>
+                        <action id="0" name="Call function" sid="863820661068163" type="Function">
+                            <param id="0" name="Name">&quot;ajaxGuardarDia&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
                         </action>
                         <action id="0" name="Call function" sid="340542205127930" type="Function">
                             <param id="0" name="Name">&quot;cargarTextoConsigna4&quot;</param>
@@ -1476,6 +1489,10 @@
                             <param id="3" name="Volume">0</param>
                             <param id="1" name="Tag (optional)">&quot;ambiente&quot;</param>
                         </action>
+                        <action id="0" name="Call function" sid="500696524619581" type="Function">
+                            <param id="0" name="Name">&quot;ajaxGuardarDia&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
                         <action id="0" name="Call function" sid="308229344184466" type="Function">
                             <param id="0" name="Name">&quot;cargarTextoConsigna5&quot;</param>
                             <param id="1" name="Parameter {n}"></param>
@@ -1547,6 +1564,10 @@
                             <param id="3" name="Volume">0</param>
                             <param id="1" name="Tag (optional)">&quot;ambiente&quot;</param>
                         </action>
+                        <action id="0" name="Call function" sid="110911606356278" type="Function">
+                            <param id="0" name="Name">&quot;ajaxGuardarDia&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
                         <action id="0" name="Call function" sid="107156015037454" type="Function">
                             <param id="0" name="Name">&quot;cargarTextoConsigna6&quot;</param>
                             <param id="1" name="Parameter {n}"></param>
@@ -1591,11 +1612,8 @@
                             <param id="0" name="Variable">status</param>
                             <param id="1" name="Value">&quot;loaded&quot;</param>
                         </action>
-                        <action id="0" name="Set text" sid="431973414090574" type="txtVisorDebug">
-                            <param id="0" name="Text">&quot;Activo&quot;</param>
-                        </action>
                         <action id="0" name="Call function" sid="801053914971281" type="Function">
-                            <param id="0" name="Name">&quot;LoadAjax&quot;</param>
+                            <param id="0" name="Name">&quot;ajaxLoadTextIntro&quot;</param>
                             <param id="1" name="Parameter {n}"></param>
                         </action>
                     </actions>
@@ -1604,10 +1622,11 @@
         </event-group>
         <event-group description="" sid="759214904434431" title="Ajax">
             <sub-events>
+                <comment>Ajax que carga los textos de instrucciones para cada dia</comment>
                 <event-block sid="534939463439349">
                     <conditions>
                         <condition id="0" name="On function" sid="610541982447960" type="Function">
-                            <param id="0" name="Name">&quot;LoadAjax&quot;</param>
+                            <param id="0" name="Name">&quot;ajaxLoadTextIntro&quot;</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -1617,7 +1636,6 @@
                         </action>
                     </actions>
                 </event-block>
-                <comment>verificar si estas funciones siguen ene ejcucion</comment>
                 <event-block sid="379588097169541">
                     <conditions>
                         <condition id="0" name="On completed" sid="765293968385561" type="AJAX">
@@ -1631,27 +1649,20 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="962967803227664">
+                <comment>Ajax que envia el dia que conlcuye el jugador</comment>
+                <event-block sid="354903972110397">
                     <conditions>
-                        <condition id="2" name="On progress" sid="537553181273270" type="AJAX">
-                            <param id="0" name="Tag">&quot;introTextsFarm&quot;</param>
+                        <condition id="0" name="On function" sid="310916442241739" type="Function">
+                            <param id="0" name="Name">&quot;ajaxGuardarDia&quot;</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="0" name="Set text" sid="675743830321393" type="txtVisorDebug">
-                            <param id="0" name="Text">&quot;en rpogreso&quot;</param>
+                        <action id="0" name="Request URL" sid="582517534288729" type="AJAX">
+                            <param id="0" name="Tag">&quot;seguimientoDia&quot;</param>
+                            <param id="1" name="URL">URLGUARDARDIA &amp; &quot;id_usuario=lchc@correo.de&amp;dia=&quot; &amp; consecutivoDia</param>
                         </action>
-                    </actions>
-                </event-block>
-                <event-block sid="682830081423409">
-                    <conditions>
-                        <condition id="1" name="On error" sid="876229144093900" type="AJAX">
-                            <param id="0" name="Tag">&quot;errorAjax&quot;</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="0" name="Set text" sid="106110479741586" type="txtVisorDebug">
-                            <param id="0" name="Text">&quot;Error&quot;</param>
+                        <action id="0" name="Set text" sid="966108095966935" type="txtVisorDebug">
+                            <param id="0" name="Text">URLGUARDARDIA &amp; &quot;id_usuario=lchc@correo.de&amp;dia=&quot; &amp; consecutivoDia</param>
                         </action>
                     </actions>
                 </event-block>
