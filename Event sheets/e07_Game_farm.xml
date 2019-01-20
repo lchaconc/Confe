@@ -4,7 +4,7 @@
     <name>e07_Game_farm</name>
     <events>
         <variable constant="1" name="URLTXTINTROS" sid="133953060642819" static="0" type="text">http://construtecdeleste.com/test/confe_server/get_txt1.php</variable>
-        <variable comment="dias que va completando la misión 1 = primer día" constant="0" name="consecutivoDia" sid="517144503279101" static="0" type="number">0</variable>
+        <variable comment="dias que va completando la misión 1 = primer día" constant="0" name="consecutivoDia" sid="517144503279101" static="0" type="number">3</variable>
         <variable constant="1" name="cFinDia" sid="378310848182712" static="0" type="text">¡Felicidades! Has completado la misión del día </variable>
         <variable constant="0" name="status" sid="136760279146205" static="0" type="text">nulo</variable>
         <event-group description="" sid="390927723385015" title="mainChar">
@@ -534,15 +534,25 @@
                             <param id="0" name="Name">&quot;cerarModalInventario&quot;</param>
                             <param id="1" name="Parameter {n}"></param>
                         </action>
-                        <action id="4" name="Set animation" sid="119391490363398" type="carriot">
-                            <param id="0" name="Animation">&quot;listo&quot;</param>
-                            <param id="1" name="From">1</param>
+                        <action id="-16" name="Wait" sid="605180888770911" type="System">
+                            <param id="0" name="Seconds">0.6</param>
                         </action>
                         <action id="0" name="Play" sid="702347682957899" type="Audio">
                             <param id="0" name="Audio file">logrado1</param>
                             <param id="2" name="Loop">0</param>
                             <param id="3" name="Volume">0</param>
                             <param id="1" name="Tag (optional)">&quot;corte&quot;</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="119391490363398" type="carriot">
+                            <param id="0" name="Animation">&quot;listo&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="487845107375195" type="inv_canasta">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="903609078357072" type="inv_canasta">
+                            <param id="0" name="Instance variable">activo</param>
+                            <param id="1" name="Value">1</param>
                         </action>
                         <action id="-13" name="Set boolean" sid="770949856108101" type="sensorHuerta">
                             <param id="0" name="Instance variable">activoRegado2</param>
@@ -600,6 +610,64 @@
                         <action id="0" name="Call function" sid="297890010211292" type="Function">
                             <param id="0" name="Name">&quot;papiroFinDia5&quot;</param>
                             <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>Dìa 5: cosechar hortalizas (zanahorias)</comment>
+                <event-block sid="535815575713440">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="733697326924034" type="Touch">
+                            <param id="0" name="Object">inv_canasta</param>
+                        </condition>
+                        <condition id="-8" name="Is boolean instance variable set" sid="193308750856835" type="inv_canasta">
+                            <param id="0" name="Instance variable">activo</param>
+                        </condition>
+                        <condition id="-8" name="Is boolean instance variable set" sid="595263638755887" type="sensorHuerta">
+                            <param id="0" name="Instance variable">colision</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="725267012611333" type="System">
+                            <param id="0" name="Variable">consecutivoDia</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="873128160407821" type="Function">
+                            <param id="0" name="Name">&quot;cerarModalInventario&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="0" name="Play" sid="605380857743356" type="Audio">
+                            <param id="0" name="Audio file">logrado1</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;corte&quot;</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="348221441212929" type="System">
+                            <param id="0" name="Variable">status</param>
+                            <param id="1" name="Value">&quot;Zanahorias cosechadas&quot;</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="309387925462406" type="carriot">
+                            <param id="0" name="Instance variable">cosechadas</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action disabled="1" id="0" name="Call function" sid="277473759045440" type="Function">
+                            <param id="0" name="Name">&quot;papiroFinDia6&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="161933641420337" type="carriot">
+                            <param id="0" name="Angle">random(0,360)</param>
+                        </action>
+                        <action behavior="Bullet" id="5" name="Set enabled" sid="159760748422273" type="carriot">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="657826353287902" type="System">
+                            <param id="0" name="Seconds">2</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="100192231665450" type="carriot">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action behavior="Bullet" id="5" name="Set enabled" sid="409355203289201" type="carriot">
+                            <param id="0" name="State">0</param>
                         </action>
                     </actions>
                 </event-block>
@@ -1421,6 +1489,9 @@
                         </condition>
                         <condition id="-8" name="Is boolean instance variable set" sid="295646757057884" type="queso">
                             <param id="0" name="Instance variable">activo</param>
+                        </condition>
+                        <condition id="-8" name="Is boolean instance variable set" sid="248766725026679" type="carriot">
+                            <param id="0" name="Instance variable">cosechadas</param>
                         </condition>
                     </conditions>
                     <actions>

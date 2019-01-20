@@ -305,8 +305,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>928</x>
-                        <y>288</y>
+                        <x>155</x>
+                        <y>480</y>
                         <z>0</z>
                         <width>64</width>
                         <height>64</height>
@@ -395,275 +395,418 @@
                 </instance>
                 <instance type="carriot" uid="37">
                     <properties>
-                        <initial-visibility>Invisible</initial-visibility>
-                        <initial-animation>semilla</initial-animation>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>planta</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <activo>false</activo>
+                        <cosechadas>false</cosechadas>
                     </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>400</speed>
+                                <acceleration>10</acceleration>
+                                <gravity>0</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>Yes</set-angle>
+                                <initial-state>Disabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>928</x>
                         <y>448</y>
                         <z>0</z>
-                        <width>7.314285755</width>
-                        <height>8</height>
+                        <width>50.285713196</width>
+                        <height>35</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0.5090909</hotspotX>
+                        <hotspotY>0.514285743</hotspotY>
                         <angle>0.064044066</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
                 <instance type="carriot" uid="38">
                     <properties>
-                        <initial-visibility>Invisible</initial-visibility>
-                        <initial-animation>semilla</initial-animation>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>planta</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <activo>false</activo>
+                        <cosechadas>false</cosechadas>
                     </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>400</speed>
+                                <acceleration>10</acceleration>
+                                <gravity>0</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>Yes</set-angle>
+                                <initial-state>Disabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>960</x>
                         <y>448</y>
                         <z>0</z>
-                        <width>7.314285755</width>
-                        <height>8</height>
+                        <width>50.285713196</width>
+                        <height>35</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0.5090909</hotspotX>
+                        <hotspotY>0.514285743</hotspotY>
                         <angle>0.064044066</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
                 <instance type="carriot" uid="40">
                     <properties>
-                        <initial-visibility>Invisible</initial-visibility>
-                        <initial-animation>semilla</initial-animation>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>planta</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <activo>false</activo>
+                        <cosechadas>false</cosechadas>
                     </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>400</speed>
+                                <acceleration>10</acceleration>
+                                <gravity>0</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>Yes</set-angle>
+                                <initial-state>Disabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>992</x>
                         <y>448</y>
                         <z>0</z>
-                        <width>7.314285755</width>
-                        <height>8</height>
+                        <width>50.285713196</width>
+                        <height>35</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0.5090909</hotspotX>
+                        <hotspotY>0.514285743</hotspotY>
                         <angle>0.064044066</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
                 <instance type="carriot" uid="41">
                     <properties>
-                        <initial-visibility>Invisible</initial-visibility>
-                        <initial-animation>semilla</initial-animation>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>planta</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <activo>false</activo>
+                        <cosechadas>false</cosechadas>
                     </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>400</speed>
+                                <acceleration>10</acceleration>
+                                <gravity>0</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>Yes</set-angle>
+                                <initial-state>Disabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>1024</x>
                         <y>448</y>
                         <z>0</z>
-                        <width>7.314285755</width>
-                        <height>8</height>
+                        <width>50.285713196</width>
+                        <height>35</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0.5090909</hotspotX>
+                        <hotspotY>0.514285743</hotspotY>
                         <angle>0.064044066</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
                 <instance type="carriot" uid="44">
                     <properties>
-                        <initial-visibility>Invisible</initial-visibility>
-                        <initial-animation>semilla</initial-animation>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>planta</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <activo>false</activo>
+                        <cosechadas>false</cosechadas>
                     </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>400</speed>
+                                <acceleration>10</acceleration>
+                                <gravity>0</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>Yes</set-angle>
+                                <initial-state>Disabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>1216</x>
                         <y>448</y>
                         <z>0</z>
-                        <width>7.314285755</width>
-                        <height>8</height>
+                        <width>50.285713196</width>
+                        <height>35</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0.5090909</hotspotX>
+                        <hotspotY>0.514285743</hotspotY>
                         <angle>0.064044066</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
                 <instance type="carriot" uid="45">
                     <properties>
-                        <initial-visibility>Invisible</initial-visibility>
-                        <initial-animation>semilla</initial-animation>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>planta</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <activo>false</activo>
+                        <cosechadas>false</cosechadas>
                     </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>400</speed>
+                                <acceleration>10</acceleration>
+                                <gravity>0</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>Yes</set-angle>
+                                <initial-state>Disabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>1056</x>
                         <y>448</y>
                         <z>0</z>
-                        <width>7.314285755</width>
-                        <height>8</height>
+                        <width>50.285713196</width>
+                        <height>35</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0.5090909</hotspotX>
+                        <hotspotY>0.514285743</hotspotY>
                         <angle>0.064044066</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
                 <instance type="carriot" uid="48">
                     <properties>
-                        <initial-visibility>Invisible</initial-visibility>
-                        <initial-animation>semilla</initial-animation>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>planta</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <activo>false</activo>
+                        <cosechadas>false</cosechadas>
                     </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>400</speed>
+                                <acceleration>10</acceleration>
+                                <gravity>0</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>Yes</set-angle>
+                                <initial-state>Disabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>1088</x>
                         <y>448</y>
                         <z>0</z>
-                        <width>7.314285755</width>
-                        <height>8</height>
+                        <width>50.285713196</width>
+                        <height>35</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0.5090909</hotspotX>
+                        <hotspotY>0.514285743</hotspotY>
                         <angle>0.064044066</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
                 <instance type="carriot" uid="49">
                     <properties>
-                        <initial-visibility>Invisible</initial-visibility>
-                        <initial-animation>semilla</initial-animation>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>planta</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <activo>false</activo>
+                        <cosechadas>false</cosechadas>
                     </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>400</speed>
+                                <acceleration>10</acceleration>
+                                <gravity>0</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>Yes</set-angle>
+                                <initial-state>Disabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>1120</x>
                         <y>448</y>
                         <z>0</z>
-                        <width>7.314285755</width>
-                        <height>8</height>
+                        <width>50.285713196</width>
+                        <height>35</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0.5090909</hotspotX>
+                        <hotspotY>0.514285743</hotspotY>
                         <angle>0.064044066</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
                 <instance type="carriot" uid="52">
                     <properties>
-                        <initial-visibility>Invisible</initial-visibility>
-                        <initial-animation>semilla</initial-animation>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>planta</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <activo>false</activo>
+                        <cosechadas>false</cosechadas>
                     </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>400</speed>
+                                <acceleration>10</acceleration>
+                                <gravity>0</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>Yes</set-angle>
+                                <initial-state>Disabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>1152</x>
                         <y>448</y>
                         <z>0</z>
-                        <width>7.314285755</width>
-                        <height>8</height>
+                        <width>50.285713196</width>
+                        <height>35</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0.5090909</hotspotX>
+                        <hotspotY>0.514285743</hotspotY>
                         <angle>0.064044066</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
                 <instance type="carriot" uid="53">
                     <properties>
-                        <initial-visibility>Invisible</initial-visibility>
-                        <initial-animation>semilla</initial-animation>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>planta</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <activo>false</activo>
+                        <cosechadas>false</cosechadas>
                     </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>400</speed>
+                                <acceleration>10</acceleration>
+                                <gravity>0</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>Yes</set-angle>
+                                <initial-state>Disabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>1184</x>
                         <y>448</y>
                         <z>0</z>
-                        <width>7.314285755</width>
-                        <height>8</height>
+                        <width>50.285713196</width>
+                        <height>35</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0.5090909</hotspotX>
+                        <hotspotY>0.514285743</hotspotY>
                         <angle>0.064044066</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
                 <instance type="carriot" uid="54">
                     <properties>
-                        <initial-visibility>Invisible</initial-visibility>
-                        <initial-animation>semilla</initial-animation>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>planta</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <activo>false</activo>
+                        <cosechadas>false</cosechadas>
                     </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>400</speed>
+                                <acceleration>10</acceleration>
+                                <gravity>0</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>Yes</set-angle>
+                                <initial-state>Disabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>896</x>
                         <y>448</y>
                         <z>0</z>
-                        <width>7.314285755</width>
-                        <height>8</height>
+                        <width>50.285713196</width>
+                        <height>35</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0.5090909</hotspotX>
+                        <hotspotY>0.514285743</hotspotY>
                         <angle>0.064044066</angle>
                         <opacity>1</opacity>
                     </world>
@@ -770,550 +913,836 @@
                 </instance>
                 <instance type="carriot" uid="74">
                     <properties>
-                        <initial-visibility>Invisible</initial-visibility>
-                        <initial-animation>semilla</initial-animation>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>planta</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <activo>false</activo>
+                        <cosechadas>false</cosechadas>
                     </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>400</speed>
+                                <acceleration>10</acceleration>
+                                <gravity>0</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>Yes</set-angle>
+                                <initial-state>Disabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>928</x>
                         <y>512</y>
                         <z>0</z>
-                        <width>7.314285755</width>
-                        <height>8</height>
+                        <width>50.285713196</width>
+                        <height>35</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0.5090909</hotspotX>
+                        <hotspotY>0.514285743</hotspotY>
                         <angle>0.064044066</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
                 <instance type="carriot" uid="75">
                     <properties>
-                        <initial-visibility>Invisible</initial-visibility>
-                        <initial-animation>semilla</initial-animation>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>planta</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <activo>false</activo>
+                        <cosechadas>false</cosechadas>
                     </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>400</speed>
+                                <acceleration>10</acceleration>
+                                <gravity>0</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>Yes</set-angle>
+                                <initial-state>Disabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>960</x>
                         <y>512</y>
                         <z>0</z>
-                        <width>7.314285755</width>
-                        <height>8</height>
+                        <width>50.285713196</width>
+                        <height>35</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0.5090909</hotspotX>
+                        <hotspotY>0.514285743</hotspotY>
                         <angle>0.064044066</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
                 <instance type="carriot" uid="76">
                     <properties>
-                        <initial-visibility>Invisible</initial-visibility>
-                        <initial-animation>semilla</initial-animation>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>planta</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <activo>false</activo>
+                        <cosechadas>false</cosechadas>
                     </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>400</speed>
+                                <acceleration>10</acceleration>
+                                <gravity>0</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>Yes</set-angle>
+                                <initial-state>Disabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>992</x>
                         <y>512</y>
                         <z>0</z>
-                        <width>7.314285755</width>
-                        <height>8</height>
+                        <width>50.285713196</width>
+                        <height>35</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0.5090909</hotspotX>
+                        <hotspotY>0.514285743</hotspotY>
                         <angle>0.064044066</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
                 <instance type="carriot" uid="77">
                     <properties>
-                        <initial-visibility>Invisible</initial-visibility>
-                        <initial-animation>semilla</initial-animation>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>planta</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <activo>false</activo>
+                        <cosechadas>false</cosechadas>
                     </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>400</speed>
+                                <acceleration>10</acceleration>
+                                <gravity>0</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>Yes</set-angle>
+                                <initial-state>Disabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>1024</x>
                         <y>512</y>
                         <z>0</z>
-                        <width>7.314285755</width>
-                        <height>8</height>
+                        <width>50.285713196</width>
+                        <height>35</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0.5090909</hotspotX>
+                        <hotspotY>0.514285743</hotspotY>
                         <angle>0.064044066</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
                 <instance type="carriot" uid="78">
                     <properties>
-                        <initial-visibility>Invisible</initial-visibility>
-                        <initial-animation>semilla</initial-animation>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>planta</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <activo>false</activo>
+                        <cosechadas>false</cosechadas>
                     </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>400</speed>
+                                <acceleration>10</acceleration>
+                                <gravity>0</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>Yes</set-angle>
+                                <initial-state>Disabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>1216</x>
                         <y>512</y>
                         <z>0</z>
-                        <width>7.314285755</width>
-                        <height>8</height>
+                        <width>50.285713196</width>
+                        <height>35</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0.5090909</hotspotX>
+                        <hotspotY>0.514285743</hotspotY>
                         <angle>0.064044066</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
                 <instance type="carriot" uid="79">
                     <properties>
-                        <initial-visibility>Invisible</initial-visibility>
-                        <initial-animation>semilla</initial-animation>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>planta</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <activo>false</activo>
+                        <cosechadas>false</cosechadas>
                     </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>400</speed>
+                                <acceleration>10</acceleration>
+                                <gravity>0</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>Yes</set-angle>
+                                <initial-state>Disabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>1056</x>
                         <y>512</y>
                         <z>0</z>
-                        <width>7.314285755</width>
-                        <height>8</height>
+                        <width>50.285713196</width>
+                        <height>35</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0.5090909</hotspotX>
+                        <hotspotY>0.514285743</hotspotY>
                         <angle>0.064044066</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
                 <instance type="carriot" uid="80">
                     <properties>
-                        <initial-visibility>Invisible</initial-visibility>
-                        <initial-animation>semilla</initial-animation>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>planta</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <activo>false</activo>
+                        <cosechadas>false</cosechadas>
                     </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>400</speed>
+                                <acceleration>10</acceleration>
+                                <gravity>0</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>Yes</set-angle>
+                                <initial-state>Disabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>1088</x>
                         <y>512</y>
                         <z>0</z>
-                        <width>7.314285755</width>
-                        <height>8</height>
+                        <width>50.285713196</width>
+                        <height>35</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0.5090909</hotspotX>
+                        <hotspotY>0.514285743</hotspotY>
                         <angle>0.064044066</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
                 <instance type="carriot" uid="81">
                     <properties>
-                        <initial-visibility>Invisible</initial-visibility>
-                        <initial-animation>semilla</initial-animation>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>planta</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <activo>false</activo>
+                        <cosechadas>false</cosechadas>
                     </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>400</speed>
+                                <acceleration>10</acceleration>
+                                <gravity>0</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>Yes</set-angle>
+                                <initial-state>Disabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>1120</x>
                         <y>512</y>
                         <z>0</z>
-                        <width>7.314285755</width>
-                        <height>8</height>
+                        <width>50.285713196</width>
+                        <height>35</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0.5090909</hotspotX>
+                        <hotspotY>0.514285743</hotspotY>
                         <angle>0.064044066</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
                 <instance type="carriot" uid="82">
                     <properties>
-                        <initial-visibility>Invisible</initial-visibility>
-                        <initial-animation>semilla</initial-animation>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>planta</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <activo>false</activo>
+                        <cosechadas>false</cosechadas>
                     </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>400</speed>
+                                <acceleration>10</acceleration>
+                                <gravity>0</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>Yes</set-angle>
+                                <initial-state>Disabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>1152</x>
                         <y>512</y>
                         <z>0</z>
-                        <width>7.314285755</width>
-                        <height>8</height>
+                        <width>50.285713196</width>
+                        <height>35</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0.5090909</hotspotX>
+                        <hotspotY>0.514285743</hotspotY>
                         <angle>0.064044066</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
                 <instance type="carriot" uid="83">
                     <properties>
-                        <initial-visibility>Invisible</initial-visibility>
-                        <initial-animation>semilla</initial-animation>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>planta</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <activo>false</activo>
+                        <cosechadas>false</cosechadas>
                     </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>400</speed>
+                                <acceleration>10</acceleration>
+                                <gravity>0</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>Yes</set-angle>
+                                <initial-state>Disabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>1184</x>
                         <y>512</y>
                         <z>0</z>
-                        <width>7.314285755</width>
-                        <height>8</height>
+                        <width>50.285713196</width>
+                        <height>35</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0.5090909</hotspotX>
+                        <hotspotY>0.514285743</hotspotY>
                         <angle>0.064044066</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
                 <instance type="carriot" uid="84">
                     <properties>
-                        <initial-visibility>Invisible</initial-visibility>
-                        <initial-animation>semilla</initial-animation>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>planta</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <activo>false</activo>
+                        <cosechadas>false</cosechadas>
                     </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>400</speed>
+                                <acceleration>10</acceleration>
+                                <gravity>0</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>Yes</set-angle>
+                                <initial-state>Disabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>896</x>
                         <y>512</y>
                         <z>0</z>
-                        <width>7.314285755</width>
-                        <height>8</height>
+                        <width>50.285713196</width>
+                        <height>35</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0.5090909</hotspotX>
+                        <hotspotY>0.514285743</hotspotY>
                         <angle>0.064044066</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
                 <instance type="carriot" uid="87">
                     <properties>
-                        <initial-visibility>Invisible</initial-visibility>
-                        <initial-animation>semilla</initial-animation>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>planta</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <activo>false</activo>
+                        <cosechadas>false</cosechadas>
                     </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>400</speed>
+                                <acceleration>10</acceleration>
+                                <gravity>0</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>Yes</set-angle>
+                                <initial-state>Disabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>992</x>
                         <y>576</y>
                         <z>0</z>
-                        <width>7.314285755</width>
-                        <height>8</height>
+                        <width>50.285713196</width>
+                        <height>35</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0.5090909</hotspotX>
+                        <hotspotY>0.514285743</hotspotY>
                         <angle>0.064044066</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
                 <instance type="carriot" uid="88">
                     <properties>
-                        <initial-visibility>Invisible</initial-visibility>
-                        <initial-animation>semilla</initial-animation>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>planta</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <activo>false</activo>
+                        <cosechadas>false</cosechadas>
                     </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>400</speed>
+                                <acceleration>10</acceleration>
+                                <gravity>0</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>Yes</set-angle>
+                                <initial-state>Disabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>1024</x>
                         <y>576</y>
                         <z>0</z>
-                        <width>7.314285755</width>
-                        <height>8</height>
+                        <width>50.285713196</width>
+                        <height>35</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0.5090909</hotspotX>
+                        <hotspotY>0.514285743</hotspotY>
                         <angle>0.064044066</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
                 <instance type="carriot" uid="89">
                     <properties>
-                        <initial-visibility>Invisible</initial-visibility>
-                        <initial-animation>semilla</initial-animation>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>planta</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <activo>false</activo>
+                        <cosechadas>false</cosechadas>
                     </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>400</speed>
+                                <acceleration>10</acceleration>
+                                <gravity>0</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>Yes</set-angle>
+                                <initial-state>Disabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>1216</x>
                         <y>576</y>
                         <z>0</z>
-                        <width>7.314285755</width>
-                        <height>8</height>
+                        <width>50.285713196</width>
+                        <height>35</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0.5090909</hotspotX>
+                        <hotspotY>0.514285743</hotspotY>
                         <angle>0.064044066</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
                 <instance type="carriot" uid="90">
                     <properties>
-                        <initial-visibility>Invisible</initial-visibility>
-                        <initial-animation>semilla</initial-animation>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>planta</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <activo>false</activo>
+                        <cosechadas>false</cosechadas>
                     </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>400</speed>
+                                <acceleration>10</acceleration>
+                                <gravity>0</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>Yes</set-angle>
+                                <initial-state>Disabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>1056</x>
                         <y>576</y>
                         <z>0</z>
-                        <width>7.314285755</width>
-                        <height>8</height>
+                        <width>50.285713196</width>
+                        <height>35</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0.5090909</hotspotX>
+                        <hotspotY>0.514285743</hotspotY>
                         <angle>0.064044066</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
                 <instance type="carriot" uid="91">
                     <properties>
-                        <initial-visibility>Invisible</initial-visibility>
-                        <initial-animation>semilla</initial-animation>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>planta</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <activo>false</activo>
+                        <cosechadas>false</cosechadas>
                     </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>400</speed>
+                                <acceleration>10</acceleration>
+                                <gravity>0</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>Yes</set-angle>
+                                <initial-state>Disabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>1088</x>
                         <y>576</y>
                         <z>0</z>
-                        <width>7.314285755</width>
-                        <height>8</height>
+                        <width>50.285713196</width>
+                        <height>35</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0.5090909</hotspotX>
+                        <hotspotY>0.514285743</hotspotY>
                         <angle>0.064044066</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
                 <instance type="carriot" uid="92">
                     <properties>
-                        <initial-visibility>Invisible</initial-visibility>
-                        <initial-animation>semilla</initial-animation>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>planta</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <activo>false</activo>
+                        <cosechadas>false</cosechadas>
                     </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>400</speed>
+                                <acceleration>10</acceleration>
+                                <gravity>0</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>Yes</set-angle>
+                                <initial-state>Disabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>1120</x>
                         <y>576</y>
                         <z>0</z>
-                        <width>7.314285755</width>
-                        <height>8</height>
+                        <width>50.285713196</width>
+                        <height>35</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0.5090909</hotspotX>
+                        <hotspotY>0.514285743</hotspotY>
                         <angle>0.064044066</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
                 <instance type="carriot" uid="93">
                     <properties>
-                        <initial-visibility>Invisible</initial-visibility>
-                        <initial-animation>semilla</initial-animation>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>planta</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <activo>false</activo>
+                        <cosechadas>false</cosechadas>
                     </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>400</speed>
+                                <acceleration>10</acceleration>
+                                <gravity>0</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>Yes</set-angle>
+                                <initial-state>Disabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>1152</x>
                         <y>576</y>
                         <z>0</z>
-                        <width>7.314285755</width>
-                        <height>8</height>
+                        <width>50.285713196</width>
+                        <height>35</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0.5090909</hotspotX>
+                        <hotspotY>0.514285743</hotspotY>
                         <angle>0.064044066</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
                 <instance type="carriot" uid="94">
                     <properties>
-                        <initial-visibility>Invisible</initial-visibility>
-                        <initial-animation>semilla</initial-animation>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>planta</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <activo>false</activo>
+                        <cosechadas>false</cosechadas>
                     </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>400</speed>
+                                <acceleration>10</acceleration>
+                                <gravity>0</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>Yes</set-angle>
+                                <initial-state>Disabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>1184</x>
                         <y>576</y>
                         <z>0</z>
-                        <width>7.314285755</width>
-                        <height>8</height>
+                        <width>50.285713196</width>
+                        <height>35</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0.5090909</hotspotX>
+                        <hotspotY>0.514285743</hotspotY>
                         <angle>0.064044066</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
                 <instance type="carriot" uid="85">
                     <properties>
-                        <initial-visibility>Invisible</initial-visibility>
-                        <initial-animation>semilla</initial-animation>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>planta</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <activo>false</activo>
+                        <cosechadas>false</cosechadas>
                     </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>400</speed>
+                                <acceleration>10</acceleration>
+                                <gravity>0</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>Yes</set-angle>
+                                <initial-state>Disabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>832</x>
                         <y>512</y>
                         <z>0</z>
-                        <width>7.314285755</width>
-                        <height>8</height>
+                        <width>50.285713196</width>
+                        <height>35</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0.5090909</hotspotX>
+                        <hotspotY>0.514285743</hotspotY>
                         <angle>0.064044066</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
                 <instance type="carriot" uid="86">
                     <properties>
-                        <initial-visibility>Invisible</initial-visibility>
-                        <initial-animation>semilla</initial-animation>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>planta</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <activo>false</activo>
+                        <cosechadas>false</cosechadas>
                     </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>400</speed>
+                                <acceleration>10</acceleration>
+                                <gravity>0</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>Yes</set-angle>
+                                <initial-state>Disabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>864</x>
                         <y>512</y>
                         <z>0</z>
-                        <width>7.314285755</width>
-                        <height>8</height>
+                        <width>50.285713196</width>
+                        <height>35</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0.5090909</hotspotX>
+                        <hotspotY>0.514285743</hotspotY>
                         <angle>0.064044066</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
                 <instance type="carriot" uid="95">
                     <properties>
-                        <initial-visibility>Invisible</initial-visibility>
-                        <initial-animation>semilla</initial-animation>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>planta</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <activo>false</activo>
+                        <cosechadas>false</cosechadas>
                     </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>400</speed>
+                                <acceleration>10</acceleration>
+                                <gravity>0</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>Yes</set-angle>
+                                <initial-state>Disabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>800</x>
                         <y>512</y>
                         <z>0</z>
-                        <width>7.314285755</width>
-                        <height>8</height>
+                        <width>50.285713196</width>
+                        <height>35</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0.5090909</hotspotX>
+                        <hotspotY>0.514285743</hotspotY>
                         <angle>0.064044066</angle>
                         <opacity>1</opacity>
                     </world>
@@ -1328,7 +1757,7 @@
                     <instance-variables>
                         <colision>false</colision>
                         <activoComida>false</activoComida>
-                        <activoOrdenar>false</activoOrdenar>
+                        <activoOrdenar>true</activoOrdenar>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -1492,8 +1921,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>544</x>
-                        <y>512</y>
+                        <x>224</x>
+                        <y>608</y>
                         <z>0</z>
                         <width>49.729839325</width>
                         <height>41.18252182</height>
@@ -1624,8 +2053,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1120</x>
-                        <y>288</y>
+                        <x>64</x>
+                        <y>416</y>
                         <z>0</z>
                         <width>79.003311157</width>
                         <height>51.845924377</height>
@@ -2053,8 +2482,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>672</x>
-                        <y>256</y>
+                        <x>1120</x>
+                        <y>160</y>
                         <z>0</z>
                         <width>96</width>
                         <height>58</height>
@@ -2140,8 +2569,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>352</x>
-                        <y>608</y>
+                        <x>416</x>
+                        <y>864</y>
                         <z>0</z>
                         <width>128</width>
                         <height>55</height>
@@ -2627,8 +3056,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>544</x>
-                        <y>384</y>
+                        <x>1088</x>
+                        <y>992</y>
                         <z>0</z>
                         <width>61</width>
                         <height>60</height>
@@ -2769,8 +3198,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>480</x>
-                        <y>608</y>
+                        <x>800</x>
+                        <y>1088</y>
                         <z>0</z>
                         <width>64</width>
                         <height>64</height>
@@ -2825,8 +3254,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>192</x>
-                        <y>576</y>
+                        <x>96</x>
+                        <y>928</y>
                         <z>0</z>
                         <width>67</width>
                         <height>90</height>
@@ -2857,8 +3286,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1760</x>
-                        <y>416</y>
+                        <x>1568</x>
+                        <y>288</y>
                         <z>0</z>
                         <width>167.924362183</width>
                         <height>121.959663391</height>
@@ -2882,8 +3311,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1760</x>
-                        <y>384</y>
+                        <x>1568</x>
+                        <y>256</y>
                         <z>0</z>
                         <width>94.994743347</width>
                         <height>43.118179321</height>
@@ -3032,8 +3461,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>544</x>
-                        <y>256</y>
+                        <x>1120</x>
+                        <y>288</y>
                         <z>0</z>
                         <width>64</width>
                         <height>96</height>
@@ -3053,8 +3482,8 @@
                     </properties>
                     <instance-variables>
                         <colision>false</colision>
-                        <activoRegado1>false</activoRegado1>
-                        <activoRegado2>false</activoRegado2>
+                        <activoRegado1>true</activoRegado1>
+                        <activoRegado2>true</activoRegado2>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -3506,13 +3935,13 @@
                 </instance>
                 <instance type="inv_balde" uid="133">
                     <properties>
-                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <activo>false</activo>
+                        <activo>true</activo>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -3531,13 +3960,13 @@
                 </instance>
                 <instance type="inv_balde_leche" uid="134">
                     <properties>
-                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <activo>false</activo>
+                        <activo>true</activo>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -3556,13 +3985,13 @@
                 </instance>
                 <instance type="inv_regadera" uid="142">
                     <properties>
-                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <activo>false</activo>
+                        <activo>true</activo>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -3575,6 +4004,31 @@
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.509433985</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="inv_canasta" uid="160">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <activo>false</activo>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>480</x>
+                        <y>239.936264038</y>
+                        <z>0</z>
+                        <width>128</width>
+                        <height>96</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.501992047</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

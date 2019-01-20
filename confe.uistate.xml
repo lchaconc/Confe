@@ -34,7 +34,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="0" path="object-folder/items/" />
         <folder expanded="0" path="object-folder/visor/" />
         <folder expanded="1" path="object-folder/objects_4directions/" />
-        <folder expanded="0" path="object-folder/inventario/" />
+        <folder expanded="1" path="object-folder/inventario/" />
         <folder expanded="1" path="object-folder/texts/" />
         <folder expanded="0" path="object-folder/particulas/" />
         <folder expanded="0" path="object-folder/sensores/" />
@@ -106,6 +106,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/inv_balde/" />
         <folder expanded="1" path="animation-folder/inv_balde_leche/" />
         <folder expanded="1" path="animation-folder/inv_regadera/" />
+        <folder expanded="1" path="animation-folder/inv_canasta/" />
         <folder expanded="1" path="animation-folder/jesus/" />
         <folder expanded="1" path="animation-folder/sensorHuerta/" />
     </folders-expanded>

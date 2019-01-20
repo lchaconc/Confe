@@ -21,6 +21,7 @@
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
     </used-plugins>
     <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
@@ -387,7 +388,13 @@
                 <plugin id="Sprite" />
                 <instance-variables>
                     <instance-variable name="activo" sid="311943495204432" type="boolean" />
+                    <instance-variable name="cosechadas" sid="616873387777289" type="boolean" />
                 </instance-variables>
+                <behaviors>
+                    <behavior-type name="Bullet" sid="311355378113776">
+                        <behavior id="Bullet" />
+                    </behavior-type>
+                </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="listo" pingpong="0" repeatcount="1" repeatto="0" sid="861552132733085" speed="5">
                         <frame duration="1" hotspotX="0.514286" hotspotY="0.5" original-source="C:\Users\logan24\Desktop\assets\zanahoria.png" />
@@ -1102,6 +1109,17 @@
                                 <point x="0.898437" y="0.122642" />
                             </collision-poly>
                         </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="inv_canasta" sid="724446683918397">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="activo" sid="674940261741252" type="boolean" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="942133438996049" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.501992" original-source="C:\Users\logan24\Desktop\assets\canasta_verde.png" />
                     </animation>
                 </animation-folder>
             </object-type>
