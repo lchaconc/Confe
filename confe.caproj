@@ -17,6 +17,7 @@
         <plugin author="Scirra" id="Particles" version="1">Particles</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TextBox" version="1">Text box</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
     </used-plugins>
@@ -1092,6 +1093,9 @@
             </object-type>
             <object-type name="txtInstruccionesDia" sid="237794363881362">
                 <plugin id="Text" />
+            </object-type>
+            <object-type name="textoTmp" sid="161858185081731">
+                <plugin id="TextBox" />
             </object-type>
         </object-folder>
         <object-folder name="particulas">

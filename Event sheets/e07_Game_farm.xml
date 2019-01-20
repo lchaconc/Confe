@@ -90,6 +90,7 @@
         </event-group>
         <event-group description="" sid="572077063247005" title="Selecciones">
             <sub-events>
+                <comment>Día 1: Cortar el arbol</comment>
                 <event-block sid="378776854775875">
                     <conditions>
                         <condition id="17" name="On tap object" sid="569878429444925" type="Touch">
@@ -154,6 +155,7 @@
                         </action>
                     </actions>
                 </event-block>
+                <comment>Día 1: sembrar huerto</comment>
                 <event-block sid="737611550526027">
                     <conditions>
                         <condition id="17" name="On tap object" sid="238127705820009" type="Touch">
@@ -196,13 +198,13 @@
                             <param id="0" name="Instance variable">activo</param>
                             <param id="1" name="Value">1</param>
                         </action>
-                        <action id="0" name="Call function" sid="973124523355336" type="Function">
-                            <param id="0" name="Name">&quot;abrirPapiro&quot;</param>
-                            <param id="1" name="Parameter {n}"></param>
-                        </action>
                         <action id="-9" name="Set value" sid="957506089156567" type="System">
                             <param id="0" name="Variable">status</param>
                             <param id="1" name="Value">&quot;huerto sembrado&quot;</param>
+                        </action>
+                        <action id="0" name="Call function" sid="973124523355336" type="Function">
+                            <param id="0" name="Name">&quot;papiroFinDia1&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
                         </action>
                     </actions>
                 </event-block>
@@ -259,8 +261,10 @@
                         <condition id="-8" name="Is boolean instance variable set" sid="925567917712632" type="sensorHuerta">
                             <param id="0" name="Instance variable">colision</param>
                         </condition>
-                        <condition id="-8" name="Is boolean instance variable set" sid="367549448062381" type="carriot">
-                            <param id="0" name="Instance variable">activo</param>
+                        <condition id="-14" name="Compare variable" sid="299508991175317" type="System">
+                            <param id="0" name="Variable">consecutivoDia</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -282,7 +286,7 @@
                             <param id="0" name="Animation">&quot;planta&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
-                        <action id="-13" name="Set boolean" sid="345718555363555" type="sensorHuerta">
+                        <action id="-13" name="Set boolean" sid="700492065755853" type="sensorHuerta">
                             <param id="0" name="Instance variable">activoRegado1</param>
                             <param id="1" name="Value">1</param>
                         </action>
@@ -291,7 +295,7 @@
                             <param id="1" name="Value">&quot;Huerta regada 1&quot;</param>
                         </action>
                         <action id="0" name="Call function" sid="611280268257753" type="Function">
-                            <param id="0" name="Name">&quot;abrirPapiro2&quot;</param>
+                            <param id="0" name="Name">&quot;papiroFinDia2&quot;</param>
                             <param id="1" name="Parameter {n}"></param>
                         </action>
                     </actions>
@@ -333,7 +337,7 @@
                             <param id="1" name="Value">&quot;Vacas alimentadas&quot;</param>
                         </action>
                         <action id="0" name="Call function" sid="483499869634596" type="Function">
-                            <param id="0" name="Name">&quot;abrirPapiro2&quot;</param>
+                            <param id="0" name="Name">&quot;papiroFinDia2&quot;</param>
                             <param id="1" name="Parameter {n}"></param>
                         </action>
                     </actions>
@@ -384,7 +388,7 @@
                             <param id="1" name="Value">&quot;Oveja trasquilada&quot;</param>
                         </action>
                         <action id="0" name="Call function" sid="591025297273026" type="Function">
-                            <param id="0" name="Name">&quot;abrirPapiro3&quot;</param>
+                            <param id="0" name="Name">&quot;papiroFinDia3&quot;</param>
                             <param id="1" name="Parameter {n}"></param>
                         </action>
                     </actions>
@@ -444,7 +448,7 @@
                                     <param id="1" name="Value">&quot;Granero construido&quot;</param>
                                 </action>
                                 <action id="0" name="Call function" sid="583595657623193" type="Function">
-                                    <param id="0" name="Name">&quot;abrirPapiro3&quot;</param>
+                                    <param id="0" name="Name">&quot;papiroFinDia3&quot;</param>
                                     <param id="1" name="Parameter {n}"></param>
                                 </action>
                             </actions>
@@ -498,7 +502,7 @@
                             <param id="1" name="Value">&quot;VAca ordeñanada&quot;</param>
                         </action>
                         <action id="0" name="Call function" sid="301363041355636" type="Function">
-                            <param id="0" name="Name">&quot;abrirPapiro4&quot;</param>
+                            <param id="0" name="Name">&quot;papiroFinDia4&quot;</param>
                             <param id="1" name="Parameter {n}"></param>
                         </action>
                     </actions>
@@ -525,15 +529,15 @@
                             <param id="0" name="Name">&quot;cerarModalInventario&quot;</param>
                             <param id="1" name="Parameter {n}"></param>
                         </action>
+                        <action id="4" name="Set animation" sid="119391490363398" type="carriot">
+                            <param id="0" name="Animation">&quot;semilla&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
                         <action id="0" name="Play" sid="702347682957899" type="Audio">
                             <param id="0" name="Audio file">logrado1</param>
                             <param id="2" name="Loop">0</param>
                             <param id="3" name="Volume">0</param>
                             <param id="1" name="Tag (optional)">&quot;corte&quot;</param>
-                        </action>
-                        <action id="4" name="Set animation" sid="119391490363398" type="carriot">
-                            <param id="0" name="Animation">&quot;listo&quot;</param>
-                            <param id="1" name="From">1</param>
                         </action>
                         <action id="-13" name="Set boolean" sid="770949856108101" type="sensorHuerta">
                             <param id="0" name="Instance variable">activoRegado2</param>
@@ -544,7 +548,7 @@
                             <param id="1" name="Value">&quot;Huerta regada 2&quot;</param>
                         </action>
                         <action id="0" name="Call function" sid="251016348951230" type="Function">
-                            <param id="0" name="Name">&quot;abrirPapiro4&quot;</param>
+                            <param id="0" name="Name">&quot;papiroFinDia4&quot;</param>
                             <param id="1" name="Parameter {n}"></param>
                         </action>
                     </actions>
@@ -606,7 +610,7 @@
                             <param id="1" name="Value">&quot;cabña construida&quot;</param>
                         </action>
                         <action id="0" name="Call function" sid="776843689574706" type="Function">
-                            <param id="0" name="Name">&quot;abrirPapiro&quot;</param>
+                            <param id="0" name="Name">&quot;papiroFinDia1&quot;</param>
                             <param id="1" name="Parameter {n}"></param>
                         </action>
                     </actions>
@@ -1054,7 +1058,7 @@
                 <event-block sid="662096407878054">
                     <conditions>
                         <condition id="0" name="On function" sid="621762195664748" type="Function">
-                            <param id="0" name="Name">&quot;abrirPapiro&quot;</param>
+                            <param id="0" name="Name">&quot;papiroFinDia1&quot;</param>
                         </condition>
                         <condition id="-8" name="Is boolean instance variable set" sid="539326230152592" type="choza">
                             <param id="0" name="Instance variable">activo</param>
@@ -1077,10 +1081,6 @@
                         <action id="-9" name="Set value" sid="809864917103703" type="System">
                             <param id="0" name="Variable">status</param>
                             <param id="1" name="Value">&quot;Mostrando papiro dia 1&quot;</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="835190405362969" type="System">
-                            <param id="0" name="Variable">consecutivoDia</param>
-                            <param id="1" name="Value">consecutivoDia + 1</param>
                         </action>
                         <action id="0" name="Set text" sid="742010760857355" type="txtfinDia">
                             <param id="0" name="Text">CFINDIA &amp;  &quot; &quot;  &amp; consecutivoDia</param>
@@ -1129,13 +1129,13 @@
                 <event-block sid="783396978904959">
                     <conditions>
                         <condition id="0" name="On function" sid="604234150398808" type="Function">
-                            <param id="0" name="Name">&quot;abrirPapiro2&quot;</param>
-                        </condition>
-                        <condition id="-8" name="Is boolean instance variable set" sid="617112130487481" type="sensorHuerta">
-                            <param id="0" name="Instance variable">activoRegado1</param>
+                            <param id="0" name="Name">&quot;papiroFinDia2&quot;</param>
                         </condition>
                         <condition id="-8" name="Is boolean instance variable set" sid="118848171172641" type="cow2">
                             <param id="0" name="Instance variable">activoComida</param>
+                        </condition>
+                        <condition id="-8" name="Is boolean instance variable set" sid="793423358296734" type="sensorHuerta">
+                            <param id="0" name="Instance variable">activoRegado1</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -1152,10 +1152,6 @@
                         <action id="-9" name="Set value" sid="850386809436755" type="System">
                             <param id="0" name="Variable">status</param>
                             <param id="1" name="Value">&quot;Mostrando papiro dia 2&quot;</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="454215624605988" type="System">
-                            <param id="0" name="Variable">consecutivoDia</param>
-                            <param id="1" name="Value">consecutivoDia + 1</param>
                         </action>
                         <action id="0" name="Set text" sid="412484078852724" type="txtfinDia">
                             <param id="0" name="Text">CFINDIA &amp;  &quot; &quot;  &amp; consecutivoDia</param>
@@ -1195,6 +1191,9 @@
                             <param id="3" name="Volume">0</param>
                             <param id="1" name="Tag (optional)">&quot;ambiente&quot;</param>
                         </action>
+                        <action id="0" name="Set text" sid="959630234423813" type="textoTmp">
+                            <param id="0" name="Text">&quot;Fin dia 2&quot;</param>
+                        </action>
                         <action id="0" name="Call function" sid="841074349412992" type="Function">
                             <param id="0" name="Name">&quot;cargarTextoConsigna3&quot;</param>
                             <param id="1" name="Parameter {n}"></param>
@@ -1204,7 +1203,7 @@
                 <event-block sid="961014773112173">
                     <conditions>
                         <condition id="0" name="On function" sid="269995977840049" type="Function">
-                            <param id="0" name="Name">&quot;abrirPapiro3&quot;</param>
+                            <param id="0" name="Name">&quot;papiroFinDia3&quot;</param>
                         </condition>
                         <condition id="-8" name="Is boolean instance variable set" sid="315598346642312" type="oveja">
                             <param id="0" name="Instance variable">activo</param>
@@ -1216,7 +1215,7 @@
                     <actions>
                         <action id="-9" name="Set value" sid="576848611357236" type="System">
                             <param id="0" name="Variable">status</param>
-                            <param id="1" name="Value">&quot;fin dia 2&quot;</param>
+                            <param id="1" name="Value">&quot;fin dia 3&quot;</param>
                         </action>
                         <action id="-16" name="Wait" sid="700741200532121" type="System">
                             <param id="0" name="Seconds">3</param>
@@ -1226,11 +1225,7 @@
                         </action>
                         <action id="-9" name="Set value" sid="389348553587494" type="System">
                             <param id="0" name="Variable">status</param>
-                            <param id="1" name="Value">&quot;Mostrando papiro dia 2&quot;</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="139690337317113" type="System">
-                            <param id="0" name="Variable">consecutivoDia</param>
-                            <param id="1" name="Value">consecutivoDia + 1</param>
+                            <param id="1" name="Value">&quot;Mostrando papiro dia 3&quot;</param>
                         </action>
                         <action id="0" name="Set text" sid="663603036947651" type="txtfinDia">
                             <param id="0" name="Text">CFINDIA &amp;  &quot; &quot;  &amp; consecutivoDia</param>
@@ -1270,6 +1265,9 @@
                             <param id="3" name="Volume">0</param>
                             <param id="1" name="Tag (optional)">&quot;ambiente&quot;</param>
                         </action>
+                        <action id="0" name="Set text" sid="695452864849229" type="textoTmp">
+                            <param id="0" name="Text">&quot;Fin dia 3&quot;</param>
+                        </action>
                         <action id="0" name="Call function" sid="340542205127930" type="Function">
                             <param id="0" name="Name">&quot;cargarTextoConsigna4&quot;</param>
                             <param id="1" name="Parameter {n}"></param>
@@ -1283,13 +1281,13 @@
                 <event-block sid="949607538634457">
                     <conditions>
                         <condition id="0" name="On function" sid="350819871171589" type="Function">
-                            <param id="0" name="Name">&quot;abrirPapiro4&quot;</param>
-                        </condition>
-                        <condition id="-8" name="Is boolean instance variable set" sid="816611979479577" type="cow2">
-                            <param id="0" name="Instance variable">activoOrdenar</param>
+                            <param id="0" name="Name">&quot;papiroFinDia4&quot;</param>
                         </condition>
                         <condition id="-8" name="Is boolean instance variable set" sid="742730558851679" type="sensorHuerta">
                             <param id="0" name="Instance variable">activoRegado2</param>
+                        </condition>
+                        <condition id="-8" name="Is boolean instance variable set" sid="495308842386751" type="cow2">
+                            <param id="0" name="Instance variable">activoOrdenar</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -1306,10 +1304,6 @@
                         <action id="-9" name="Set value" sid="801708346487377" type="System">
                             <param id="0" name="Variable">status</param>
                             <param id="1" name="Value">&quot;Mostrando papiro dia 4&quot;</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="750775804703028" type="System">
-                            <param id="0" name="Variable">consecutivoDia</param>
-                            <param id="1" name="Value">consecutivoDia + 1</param>
                         </action>
                         <action id="0" name="Set text" sid="924443635241890" type="txtfinDia">
                             <param id="0" name="Text">CFINDIA &amp;  &quot; &quot;  &amp; consecutivoDia</param>
@@ -1348,6 +1342,9 @@
                             <param id="2" name="Loop">1</param>
                             <param id="3" name="Volume">0</param>
                             <param id="1" name="Tag (optional)">&quot;ambiente&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="446641508204517" type="textoTmp">
+                            <param id="0" name="Text">&quot;Fin dia 4 XXXXX&quot;</param>
                         </action>
                         <action id="0" name="Call function" sid="308229344184466" type="Function">
                             <param id="0" name="Name">&quot;cargarTextoConsigna5&quot;</param>
@@ -1467,56 +1464,13 @@
         </event-group>
         <event-group description="" sid="796789269403613" title="Cargar_textos">
             <sub-events>
-                <event-block sid="474253020563310">
-                    <conditions>
-                        <condition id="0" name="On function" sid="566124649957659" type="Function">
-                            <param id="0" name="Name">&quot;cargarTextoIntro&quot;</param>
-                        </condition>
-                        <condition id="-14" name="Pick by unique ID" sid="218576839974949" type="txtInstruccionesDia">
-                            <param id="0" name="Unique ID">146</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-9" name="Set value" sid="467312373963048" type="System">
-                            <param id="0" name="Variable">status</param>
-                            <param id="1" name="Value">&quot;text intro&quot;</param>
-                        </action>
-                        <action id="-3" name="Set position" sid="756553199983322" type="txtInstruccionesDia">
-                            <param id="0" name="X">512</param>
-                            <param id="1" name="Y">224</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="660052030794260">
-                    <conditions>
-                        <condition id="0" name="On function" sid="198279132293542" type="Function">
-                            <param id="0" name="Name">&quot;cargarTextoConsigna1&quot;</param>
-                        </condition>
-                        <condition id="-14" name="Pick by unique ID" sid="775342126542322" type="txtInstruccionesDia">
-                            <param id="0" name="Unique ID">147</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-3" name="Set position" sid="757684433699995" type="txtInstruccionesDia">
-                            <param id="0" name="X">512</param>
-                            <param id="1" name="Y">224</param>
-                        </action>
-                        <action id="-16" name="Wait" sid="100643231022729" type="System">
-                            <param id="0" name="Seconds">0.2</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="148650684372361" type="System">
-                            <param id="0" name="Variable">status</param>
-                            <param id="1" name="Value">&quot;text consigna1&quot;</param>
-                        </action>
-                    </actions>
-                </event-block>
                 <event-block sid="634440117969043">
                     <conditions>
                         <condition id="0" name="On function" sid="553735547854346" type="Function">
-                            <param id="0" name="Name">&quot;cargarTextoConsigna2&quot;</param>
+                            <param id="0" name="Name">&quot;cargarTextoConsigna1&quot;</param>
                         </condition>
                         <condition id="-14" name="Pick by unique ID" sid="286355631313182" type="txtInstruccionesDia">
-                            <param id="0" name="Unique ID">148</param>
+                            <param id="0" name="Unique ID">147</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -1532,12 +1486,29 @@
                             <param id="0" name="Layer">&quot;shadow&quot;</param>
                             <param id="1" name="Visibility">1</param>
                         </action>
-                        <action id="-16" name="Wait" sid="162424491328366" type="System">
-                            <param id="0" name="Seconds">0.4</param>
+                    </actions>
+                </event-block>
+                <event-block sid="779595577644140">
+                    <conditions>
+                        <condition id="0" name="On function" sid="156394913694756" type="Function">
+                            <param id="0" name="Name">&quot;cargarTextoConsigna2&quot;</param>
+                        </condition>
+                        <condition id="-14" name="Pick by unique ID" sid="560359726264183" type="txtInstruccionesDia">
+                            <param id="0" name="Unique ID">148</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="420759548166177" type="txtInstruccionesDia">
+                            <param id="0" name="X">512</param>
+                            <param id="1" name="Y">224</param>
                         </action>
-                        <action id="-9" name="Set value" sid="608150141332204" type="System">
-                            <param id="0" name="Variable">status</param>
-                            <param id="1" name="Value">&quot;text consigna2&quot;</param>
+                        <action id="-4" name="Set layer visible" sid="967760404157724" type="System">
+                            <param id="0" name="Layer">&quot;textos&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="215217554025742" type="System">
+                            <param id="0" name="Layer">&quot;shadow&quot;</param>
+                            <param id="1" name="Visibility">1</param>
                         </action>
                     </actions>
                 </event-block>
@@ -1562,13 +1533,6 @@
                         <action id="-4" name="Set layer visible" sid="750810345014235" type="System">
                             <param id="0" name="Layer">&quot;shadow&quot;</param>
                             <param id="1" name="Visibility">1</param>
-                        </action>
-                        <action id="-16" name="Wait" sid="529263368049049" type="System">
-                            <param id="0" name="Seconds">0.6</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="939856228185423" type="System">
-                            <param id="0" name="Variable">status</param>
-                            <param id="1" name="Value">&quot;text consigna3&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -1603,32 +1567,32 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="239236196796605">
+                <event-block sid="637795043500644">
                     <conditions>
-                        <condition id="0" name="On function" sid="546956670473310" type="Function">
+                        <condition id="0" name="On function" sid="230714121315647" type="Function">
                             <param id="0" name="Name">&quot;cargarTextoConsigna5&quot;</param>
                         </condition>
-                        <condition id="-14" name="Pick by unique ID" sid="202010438490211" type="txtInstruccionesDia">
-                            <param id="0" name="Unique ID">155</param>
+                        <condition id="-14" name="Pick by unique ID" sid="341813554858378" type="txtInstruccionesDia">
+                            <param id="0" name="Unique ID">156</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-3" name="Set position" sid="694328352621784" type="txtInstruccionesDia">
+                        <action id="-3" name="Set position" sid="861217754068633" type="txtInstruccionesDia">
                             <param id="0" name="X">512</param>
                             <param id="1" name="Y">224</param>
                         </action>
-                        <action id="-4" name="Set layer visible" sid="475370855068374" type="System">
+                        <action id="-4" name="Set layer visible" sid="328230408126956" type="System">
                             <param id="0" name="Layer">&quot;textos&quot;</param>
                             <param id="1" name="Visibility">1</param>
                         </action>
-                        <action id="-4" name="Set layer visible" sid="472082767111621" type="System">
+                        <action id="-4" name="Set layer visible" sid="441077992319520" type="System">
                             <param id="0" name="Layer">&quot;shadow&quot;</param>
                             <param id="1" name="Visibility">1</param>
                         </action>
-                        <action id="-16" name="Wait" sid="317253561555365" type="System">
-                            <param id="0" name="Seconds">1</param>
+                        <action id="-16" name="Wait" sid="958792439291923" type="System">
+                            <param id="0" name="Seconds">0.8</param>
                         </action>
-                        <action id="-9" name="Set value" sid="858436439248144" type="System">
+                        <action id="-9" name="Set value" sid="920434778598488" type="System">
                             <param id="0" name="Variable">status</param>
                             <param id="1" name="Value">&quot;text consigna5&quot;</param>
                         </action>
@@ -1667,7 +1631,7 @@
                     <conditions />
                     <actions>
                         <action id="0" name="Call function" sid="123285955524951" type="Function">
-                            <param id="0" name="Name">&quot;cargarTextoIntro&quot;</param>
+                            <param id="0" name="Name">&quot;cargarTextoConsigna1&quot;</param>
                             <param id="1" name="Parameter {n}"></param>
                         </action>
                         <action id="-12" name="Set group active" sid="315955149890932" type="System">
@@ -1686,136 +1650,45 @@
                             <param id="0" name="Object">btnAceptar</param>
                         </condition>
                     </conditions>
-                    <actions />
-                    <sub-events>
-                        <event-block sid="865992498858625">
-                            <conditions>
-                                <condition id="-14" name="Compare variable" sid="222332888596777" type="System">
-                                    <param id="0" name="Variable">status</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">&quot;text intro&quot;</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-3" name="Set position" sid="135409676192036" type="txtInstruccionesDia">
-                                    <param id="0" name="X">-320</param>
-                                    <param id="1" name="Y">-416</param>
-                                </action>
-                                <action id="0" name="Call function" sid="253659268167281" type="Function">
-                                    <param id="0" name="Name">&quot;cargarTextoConsigna1&quot;</param>
-                                    <param id="1" name="Parameter {n}"></param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="473493496344506">
-                            <conditions>
-                                <condition id="-14" name="Compare variable" sid="890910039979565" type="System">
-                                    <param id="0" name="Variable">status</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">&quot;text consigna1&quot;</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-4" name="Set layer visible" sid="580939187149392" type="System">
-                                    <param id="0" name="Layer">&quot;textos&quot;</param>
-                                    <param id="1" name="Visibility">0</param>
-                                </action>
-                                <action id="-4" name="Set layer visible" sid="746308065862093" type="System">
-                                    <param id="0" name="Layer">&quot;shadow&quot;</param>
-                                    <param id="1" name="Visibility">0</param>
-                                </action>
-                                <action id="-3" name="Set position" sid="672984921724506" type="txtInstruccionesDia">
-                                    <param id="0" name="X">-320</param>
-                                    <param id="1" name="Y">-416</param>
-                                </action>
-                                <action id="-9" name="Set value" sid="950670992041273" type="System">
-                                    <param id="0" name="Variable">status</param>
-                                    <param id="1" name="Value">&quot;text consigna1 closed&quot;</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="562737743712656">
-                            <conditions>
-                                <condition id="-14" name="Compare variable" sid="231287069242235" type="System">
-                                    <param id="0" name="Variable">status</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">&quot;text consigna2&quot;</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-4" name="Set layer visible" sid="679448993605512" type="System">
-                                    <param id="0" name="Layer">&quot;textos&quot;</param>
-                                    <param id="1" name="Visibility">0</param>
-                                </action>
-                                <action id="-4" name="Set layer visible" sid="709727785392319" type="System">
-                                    <param id="0" name="Layer">&quot;shadow&quot;</param>
-                                    <param id="1" name="Visibility">0</param>
-                                </action>
-                                <action id="-3" name="Set position" sid="655239163310649" type="txtInstruccionesDia">
-                                    <param id="0" name="X">-320</param>
-                                    <param id="1" name="Y">-416</param>
-                                </action>
-                                <action id="-9" name="Set value" sid="998973637738916" type="System">
-                                    <param id="0" name="Variable">status</param>
-                                    <param id="1" name="Value">&quot;text consigna2 closed&quot;</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="577030447023950">
-                            <conditions>
-                                <condition id="-14" name="Compare variable" sid="977901582077278" type="System">
-                                    <param id="0" name="Variable">status</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">&quot;text consigna3&quot;</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-4" name="Set layer visible" sid="331401305240987" type="System">
-                                    <param id="0" name="Layer">&quot;textos&quot;</param>
-                                    <param id="1" name="Visibility">0</param>
-                                </action>
-                                <action id="-4" name="Set layer visible" sid="703200749982752" type="System">
-                                    <param id="0" name="Layer">&quot;shadow&quot;</param>
-                                    <param id="1" name="Visibility">0</param>
-                                </action>
-                                <action id="-3" name="Set position" sid="687835571593669" type="txtInstruccionesDia">
-                                    <param id="0" name="X">-320</param>
-                                    <param id="1" name="Y">-416</param>
-                                </action>
-                                <action id="-9" name="Set value" sid="655149679851411" type="System">
-                                    <param id="0" name="Variable">status</param>
-                                    <param id="1" name="Value">&quot;text consigna3 closed&quot;</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="785172692850934">
-                            <conditions>
-                                <condition id="-14" name="Compare variable" sid="528976823348798" type="System">
-                                    <param id="0" name="Variable">status</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">&quot;text consigna4&quot;</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-4" name="Set layer visible" sid="433634964885706" type="System">
-                                    <param id="0" name="Layer">&quot;textos&quot;</param>
-                                    <param id="1" name="Visibility">0</param>
-                                </action>
-                                <action id="-4" name="Set layer visible" sid="209288224833941" type="System">
-                                    <param id="0" name="Layer">&quot;shadow&quot;</param>
-                                    <param id="1" name="Visibility">0</param>
-                                </action>
-                                <action id="-3" name="Set position" sid="918153592807181" type="txtInstruccionesDia">
-                                    <param id="0" name="X">-320</param>
-                                    <param id="1" name="Y">-416</param>
-                                </action>
-                                <action id="-9" name="Set value" sid="112493073604023" type="System">
-                                    <param id="0" name="Variable">status</param>
-                                    <param id="1" name="Value">&quot;text consigna4 closed&quot;</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
+                    <actions>
+                        <action id="-4" name="Set layer visible" sid="217229214223961" type="System">
+                            <param id="0" name="Layer">&quot;textos&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="739437970414080" type="System">
+                            <param id="0" name="Layer">&quot;shadow&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="135409676192036" type="txtInstruccionesDia">
+                            <param id="0" name="X">-320</param>
+                            <param id="1" name="Y">-416</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="750775804703028" type="System">
+                            <param id="0" name="Variable">consecutivoDia</param>
+                            <param id="1" name="Value">consecutivoDia + 1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="971100768093407" title="Test">
+            <sub-events>
+                <event-block sid="215755221136674">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="717654343502216" type="Touch">
+                            <param id="0" name="Object">menu1_1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="221415824117346" type="txtInstruccionesDia">
+                            <param id="0" name="X">-320</param>
+                            <param id="1" name="Y">-416</param>
+                        </action>
+                        <action id="0" name="Call function" sid="612686086842601" type="Function">
+                            <param id="0" name="Name">textoTmp.Text</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
                 </event-block>
             </sub-events>
         </event-group>
