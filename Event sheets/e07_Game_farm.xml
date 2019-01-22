@@ -5,7 +5,7 @@
     <events>
         <variable constant="1" name="URLTXTINTROS" sid="133953060642819" static="0" type="text">http://construtecdeleste.com/test/confe_server/get_txt1.php</variable>
         <variable constant="1" name="URLGUARDARDIA" sid="923403895803467" static="0" type="text">http://construtecdeleste.com/test/confe_server/actualizar_dia.php?</variable>
-        <variable comment="dias que va completando la misión 1 = primer día" constant="0" name="consecutivoDia" sid="517144503279101" static="0" type="number">3</variable>
+        <variable comment="dias que va completando la misión 1 = primer día" constant="0" name="consecutivoDia" sid="517144503279101" static="0" type="number">0</variable>
         <variable constant="1" name="cFinDia" sid="378310848182712" static="0" type="text">¡Felicidades! Has completado la misión del día </variable>
         <variable constant="0" name="status" sid="136760279146205" static="0" type="text">nulo</variable>
         <event-group description="" sid="390927723385015" title="mainChar">
@@ -547,13 +547,6 @@
                         <action id="4" name="Set animation" sid="119391490363398" type="carriot">
                             <param id="0" name="Animation">&quot;listo&quot;</param>
                             <param id="1" name="From">1</param>
-                        </action>
-                        <action id="-15" name="Set visible" sid="487845107375195" type="inv_canasta">
-                            <param id="0" name="Visibility">1</param>
-                        </action>
-                        <action id="-13" name="Set boolean" sid="903609078357072" type="inv_canasta">
-                            <param id="0" name="Instance variable">activo</param>
-                            <param id="1" name="Value">1</param>
                         </action>
                         <action id="-13" name="Set boolean" sid="770949856108101" type="sensorHuerta">
                             <param id="0" name="Instance variable">activoRegado2</param>
@@ -1109,6 +1102,50 @@
                         </action>
                     </actions>
                 </event-block>
+                <event-block sid="330859517127541">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="935184732086085" type="farmMainCharacter">
+                            <param id="0" name="Object">comprador1</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="986965098678758">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="336271086215299" type="queso">
+                                    <param id="0" name="Unique ID">162</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="501843670019263" type="queso">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="331143000237750">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="120347722480081" type="farmMainCharacter">
+                            <param id="0" name="Object">comprador2</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="896483612380025">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="801896136806254" type="queso">
+                                    <param id="0" name="Unique ID">165</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="469939195788859" type="queso">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
             </sub-events>
         </event-group>
         <event-group description="" sid="625679334791743" title="Eventos_generales">
@@ -1489,6 +1526,13 @@
                             <param id="3" name="Volume">0</param>
                             <param id="1" name="Tag (optional)">&quot;ambiente&quot;</param>
                         </action>
+                        <action id="-15" name="Set visible" sid="830680537577430" type="inv_canasta">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="299780004572845" type="inv_canasta">
+                            <param id="0" name="Instance variable">activo</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
                         <action id="0" name="Call function" sid="500696524619581" type="Function">
                             <param id="0" name="Name">&quot;ajaxGuardarDia&quot;</param>
                             <param id="1" name="Parameter {n}"></param>
@@ -1676,7 +1720,7 @@
                             <param id="0" name="Name">&quot;cargarTextoConsigna1&quot;</param>
                         </condition>
                         <condition id="-14" name="Pick by unique ID" sid="286355631313182" type="txtInstruccionesDia">
-                            <param id="0" name="Unique ID">146</param>
+                            <param id="0" name="Unique ID">147</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -1700,7 +1744,7 @@
                             <param id="0" name="Name">&quot;cargarTextoConsigna2&quot;</param>
                         </condition>
                         <condition id="-14" name="Pick by unique ID" sid="560359726264183" type="txtInstruccionesDia">
-                            <param id="0" name="Unique ID">147</param>
+                            <param id="0" name="Unique ID">148</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -1724,7 +1768,7 @@
                             <param id="0" name="Name">&quot;cargarTextoConsigna3&quot;</param>
                         </condition>
                         <condition id="-14" name="Pick by unique ID" sid="225290089075933" type="txtInstruccionesDia">
-                            <param id="0" name="Unique ID">148</param>
+                            <param id="0" name="Unique ID">149</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -1748,7 +1792,7 @@
                             <param id="0" name="Name">&quot;cargarTextoConsigna4&quot;</param>
                         </condition>
                         <condition id="-14" name="Pick by unique ID" sid="986276579916972" type="txtInstruccionesDia">
-                            <param id="0" name="Unique ID">149</param>
+                            <param id="0" name="Unique ID">155</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -1779,7 +1823,7 @@
                             <param id="0" name="Name">&quot;cargarTextoConsigna5&quot;</param>
                         </condition>
                         <condition id="-14" name="Pick by unique ID" sid="341813554858378" type="txtInstruccionesDia">
-                            <param id="0" name="Unique ID">155</param>
+                            <param id="0" name="Unique ID">156</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -1810,7 +1854,7 @@
                             <param id="0" name="Name">&quot;cargarTextoConsigna6&quot;</param>
                         </condition>
                         <condition id="-14" name="Pick by unique ID" sid="450809898749638" type="txtInstruccionesDia">
-                            <param id="0" name="Unique ID">156</param>
+                            <param id="0" name="Unique ID">159</param>
                         </condition>
                     </conditions>
                     <actions>
