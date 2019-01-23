@@ -696,12 +696,10 @@
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="546991603384583" speed="5">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.502924" original-source="C:\Users\mima\Desktop\CONFE\granja128w\granjatree with flower128.png">
                             <collision-poly>
-                                <point x="0.125001" y="0.175439" />
-                                <point x="0.5" y="0" />
-                                <point x="0.789063" y="0.0292396" />
-                                <point x="0.84375" y="0.649123" />
-                                <point x="0.296876" y="1" />
-                                <point x="0.0625" y="0.497076" />
+                                <point x="0.148438" y="0.128655" />
+                                <point x="0.882813" y="0" />
+                                <point x="0.882813" y="1" />
+                                <point x="0" y="1" />
                             </collision-poly>
                         </frame>
                     </animation>
@@ -718,14 +716,10 @@
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="589738991220833" speed="5">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.502857" original-source="C:\Users\mima\Desktop\CONFE\granja128w\granjapear tree128.png">
                             <collision-poly>
-                                <point x="0.148438" y="0.108571" />
-                                <point x="0.5" y="0" />
-                                <point x="0.851563" y="0.108571" />
-                                <point x="0.96875" y="0.497143" />
-                                <point x="0.617188" y="0.72" />
-                                <point x="0.5" y="1" />
-                                <point x="0.382813" y="0.72" />
-                                <point x="0.03125" y="0.497143" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                                <point x="1" y="0.754285" />
+                                <point x="0" y="0.742857" />
                             </collision-poly>
                         </frame>
                     </animation>
