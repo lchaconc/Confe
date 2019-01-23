@@ -993,6 +993,7 @@
                 <plugin id="Sprite" />
                 <instance-variables>
                     <instance-variable name="activo" sid="428292799349614" type="boolean" />
+                    <instance-variable comment="cantidad de quesos vendidos. Max 3" name="vendidos" sid="233560247784167" type="number" />
                 </instance-variables>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="147598613931246" speed="5">
@@ -1056,6 +1057,11 @@
             </object-type>
             <object-type name="comprador4" sid="340768155007147">
                 <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="739819041047450">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
                 <animation-folder>
                     <animation framecount="3" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="918142726037906" speed="10">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5">
@@ -1125,6 +1131,17 @@
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="carriots1" sid="442075922541195">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable comment="cantidad de zanahorias venidads. 1 activa el total " name="vendido" sid="101870826568292" type="number" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="224253642970680" speed="5">
+                        <frame duration="1" hotspotX="0.496183" hotspotY="0.495146" original-source="C:\Users\logan24\Desktop\assets\carriots.png" />
                     </animation>
                 </animation-folder>
             </object-type>
@@ -1273,6 +1290,9 @@
             <object-type name="txtInstruccionesDia" sid="237794363881362">
                 <plugin id="Text" />
             </object-type>
+            <object-type name="txtFinJuego" sid="358367723452191">
+                <plugin id="Text" />
+            </object-type>
         </object-folder>
         <object-folder name="particulas">
             <object-type name="particulas_rojo" sid="385512792799643">
@@ -1316,6 +1336,14 @@
                     <effect id="grayscale" />
                 </effect-type>
             </effects>
+        </family>
+        <family name="compradores" plugin-id="Sprite" sid="216870339618986">
+            <members>
+                <member>comprador1</member>
+                <member>comprador2</member>
+                <member>comprador3</member>
+                <member>comprador4</member>
+            </members>
         </family>
     </families>
     <layout-folder>

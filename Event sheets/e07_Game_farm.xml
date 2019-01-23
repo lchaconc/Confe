@@ -1102,6 +1102,7 @@
                         </action>
                     </actions>
                 </event-block>
+                <comment>Diàs 6: vender los quesos t zanahorias</comment>
                 <event-block sid="330859517127541">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="935184732086085" type="farmMainCharacter">
@@ -1119,6 +1120,10 @@
                             <actions>
                                 <action id="-15" name="Set visible" sid="501843670019263" type="queso">
                                     <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-11" name="Add to" sid="356714428564107" type="queso">
+                                    <param id="0" name="Instance variable">vendidos</param>
+                                    <param id="1" name="Value">1</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -1142,9 +1147,55 @@
                                 <action id="-15" name="Set visible" sid="469939195788859" type="queso">
                                     <param id="0" name="Visibility">0</param>
                                 </action>
+                                <action id="-11" name="Add to" sid="970243228525360" type="queso">
+                                    <param id="0" name="Instance variable">vendidos</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
                             </actions>
                         </event-block>
                     </sub-events>
+                </event-block>
+                <event-block sid="858728361209390">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="437555236963156" type="farmMainCharacter">
+                            <param id="0" name="Object">comprador3</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="780652951008155">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="303819946569759" type="queso">
+                                    <param id="0" name="Unique ID">168</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="199922670081411" type="queso">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-11" name="Add to" sid="559567919535349" type="queso">
+                                    <param id="0" name="Instance variable">vendidos</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="610906247007586">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="575376872798180" type="farmMainCharacter">
+                            <param id="0" name="Object">comprador4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="487597103843373" type="carriots1">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-11" name="Add to" sid="285334186892768" type="carriots1">
+                            <param id="0" name="Instance variable">vendido</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
                 </event-block>
             </sub-events>
         </event-group>
@@ -1173,6 +1224,35 @@
                         <action id="0" name="Call function" sid="651570589566266" type="Function">
                             <param id="0" name="Name">&quot;abrirModalInv&quot;</param>
                             <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>Fin del juego</comment>
+                <event-block sid="277787561122518">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="891228788149527" type="queso">
+                            <param id="0" name="Instance variable">vendidos</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="443293178840056" type="carriots1">
+                            <param id="0" name="Instance variable">vendido</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="331782811774437" type="txtFinJuego">
+                            <param id="0" name="X">480</param>
+                            <param id="1" name="Y">192</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="961707496070128" type="System">
+                            <param id="0" name="Layer">&quot;shadow&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="496048103728325" type="System">
+                            <param id="0" name="Layer">&quot;textos&quot;</param>
+                            <param id="1" name="Visibility">1</param>
                         </action>
                     </actions>
                 </event-block>
@@ -1660,6 +1740,9 @@
                             <param id="0" name="Name">&quot;ajaxLoadTextIntro&quot;</param>
                             <param id="1" name="Parameter {n}"></param>
                         </action>
+                        <action id="-15" name="Set visible" sid="524833769036517" type="compradores">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>
@@ -1808,9 +1891,6 @@
                             <param id="0" name="Layer">&quot;shadow&quot;</param>
                             <param id="1" name="Visibility">1</param>
                         </action>
-                        <action id="-16" name="Wait" sid="319178337789164" type="System">
-                            <param id="0" name="Seconds">0.8</param>
-                        </action>
                         <action id="-9" name="Set value" sid="143674295607356" type="System">
                             <param id="0" name="Variable">status</param>
                             <param id="1" name="Value">&quot;text consigna4&quot;</param>
@@ -1838,9 +1918,6 @@
                         <action id="-4" name="Set layer visible" sid="441077992319520" type="System">
                             <param id="0" name="Layer">&quot;shadow&quot;</param>
                             <param id="1" name="Visibility">1</param>
-                        </action>
-                        <action id="-16" name="Wait" sid="958792439291923" type="System">
-                            <param id="0" name="Seconds">0.8</param>
                         </action>
                         <action id="-9" name="Set value" sid="920434778598488" type="System">
                             <param id="0" name="Variable">status</param>
@@ -1870,12 +1947,15 @@
                             <param id="0" name="Layer">&quot;shadow&quot;</param>
                             <param id="1" name="Visibility">1</param>
                         </action>
-                        <action id="-16" name="Wait" sid="721360278683117" type="System">
-                            <param id="0" name="Seconds">0.8</param>
-                        </action>
                         <action id="-9" name="Set value" sid="898778322296014" type="System">
                             <param id="0" name="Variable">status</param>
                             <param id="1" name="Value">&quot;text consigna6&quot;</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="357866647790476" type="compradores">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="138812773060006" type="carriots1">
+                            <param id="0" name="Visibility">1</param>
                         </action>
                     </actions>
                 </event-block>

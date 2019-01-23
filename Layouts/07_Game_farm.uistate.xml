@@ -4,11 +4,11 @@
 It is entirely optional and the project will load without it.  If you are placing the project under source control,
 you probably do not want to add any .uistate.xml files to the repository.-->
     <camera>
-        <position-x>1107.66</position-x>
-        <position-y>157.356</position-y>
-        <position-z>46.7577</position-z>
-        <lookat-x>1107.66</lookat-x>
-        <lookat-y>157.356</lookat-y>
+        <position-x>378.273</position-x>
+        <position-y>128.805</position-y>
+        <position-z>146.746</position-z>
+        <lookat-x>378.273</lookat-x>
+        <lookat-y>128.805</lookat-y>
         <lookat-z>0</lookat-z>
     </camera>
     <snap-to-grid>1</snap-to-grid>
@@ -23,7 +23,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <property expanded="0" name="Margins" />
         <property expanded="1" name="Effects" />
     </properties>
-    <active-layer name="main" />
+    <active-layer name="textos" />
     <layers>
         <layer locked="1" name="bg" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="main" parallax-in-editor="0" visible="1" />
@@ -32,6 +32,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layer locked="1" name="shadow" parallax-in-editor="0" visible="0" />
         <layer locked="1" name="modal_inv" parallax-in-editor="0" visible="0" />
         <layer locked="1" name="modal_papiro" parallax-in-editor="0" visible="0" />
-        <layer locked="1" name="textos" parallax-in-editor="0" visible="0" />
+        <layer locked="0" name="textos" parallax-in-editor="0" visible="1" />
     </layers>
 </c2uistate>

@@ -3198,8 +3198,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>800</x>
-                        <y>1088</y>
+                        <x>736</x>
+                        <y>1056</y>
                         <z>0</z>
                         <width>64</width>
                         <height>64</height>
@@ -3273,13 +3273,14 @@
                 </instance>
                 <instance type="queso" uid="158">
                     <properties>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <activo>false</activo>
+                        <vendidos>0</vendidos>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -3398,8 +3399,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>2176</x>
-                        <y>896</y>
+                        <x>2208</x>
+                        <y>1056</y>
                         <z>0</z>
                         <width>98.642364502</width>
                         <height>124.571220398</height>
@@ -3417,11 +3418,18 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1568</x>
-                        <y>448</y>
+                        <x>864</x>
+                        <y>1184</y>
                         <z>0</z>
                         <width>121.475646973</width>
                         <height>168.593475342</height>
@@ -3442,11 +3450,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>992</x>
+                        <x>1024</x>
                         <y>96</y>
                         <z>0</z>
-                        <width>128</width>
-                        <height>128</height>
+                        <width>78.383674622</width>
+                        <height>78.383674622</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -3585,8 +3593,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1120</x>
-                        <y>288</y>
+                        <x>704</x>
+                        <y>256</y>
                         <z>0</z>
                         <width>64</width>
                         <height>96</height>
@@ -3828,13 +3836,14 @@
                 </instance>
                 <instance type="queso" uid="162">
                     <properties>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <activo>false</activo>
+                        <vendidos>0</vendidos>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -3853,13 +3862,14 @@
                 </instance>
                 <instance type="queso" uid="165">
                     <properties>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <activo>false</activo>
+                        <vendidos>0</vendidos>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -3878,13 +3888,14 @@
                 </instance>
                 <instance type="queso" uid="168">
                     <properties>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <activo>false</activo>
+                        <vendidos>0</vendidos>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -3897,6 +3908,31 @@
                         <depth>0</depth>
                         <hotspotX>0.503546119</hotspotX>
                         <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="carriots1" uid="170">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <vendido>0</vendido>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1089</x>
+                        <y>312</y>
+                        <z>0</z>
+                        <width>88.398040771</width>
+                        <height>69.503799438</height>
+                        <depth>0</depth>
+                        <hotspotX>0.496183217</hotspotX>
+                        <hotspotY>0.495145619</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -4564,6 +4600,33 @@
                         <y>1312</y>
                         <z>0</z>
                         <width>416</width>
+                        <height>160</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="txtFinJuego" uid="171">
+                    <properties>
+                        <text>¡Felicidades has completado la misión!</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Kristen ITC,-37.6,400,0</font>
+                        <color>102,153,255</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>-448</x>
+                        <y>-288</y>
+                        <z>0</z>
+                        <width>448</width>
                         <height>160</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
