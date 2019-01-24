@@ -10,8 +10,10 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="0">07_Game_farm</layout>
-        <event-sheet active="1" order="1">e07_Game_farm</event-sheet>
+        <layout order="0">02_Menu_01</layout>
+        <layout active="1" order="3">08_Platform1</layout>
+        <event-sheet order="1">e02_Menu_01</event-sheet>
+        <event-sheet order="2">e08_Platform1</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -19,7 +21,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <property expanded="0" name="Window Size" />
         <property expanded="1" name="Configuration Settings" />
     </properties>
-    <families-expanded root="1">
+    <families-expanded root="0">
         <family expanded="0" name="btn_menu" />
         <family expanded="0" name="compradores" />
     </families-expanded>
@@ -37,15 +39,19 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="0" path="object-folder/texts/" />
         <folder expanded="0" path="object-folder/particulas/" />
         <folder expanded="0" path="object-folder/sensores/" />
+        <folder expanded="0" path="object-folder/tiles/" />
         <folder expanded="1" path="layout-folder/" />
-        <folder expanded="0" path="layout-folder/U_01/" />
+        <folder expanded="1" path="layout-folder/U_01/" />
         <folder expanded="0" path="layout-folder/General/" />
+        <folder expanded="1" path="layout-folder/U_02/" />
         <folder expanded="1" path="event-folder/" />
         <folder expanded="0" path="file-folder/" />
         <folder expanded="0" path="sound-folder/" />
         <folder expanded="0" path="music-folder/" />
         <folder expanded="0" path="file-folder/Icons/" />
         <folder expanded="1" path="animation-folder/farmMainCharacter/" />
+        <folder expanded="1" path="animation-folder/spriteNinjaGirl/" />
+        <folder expanded="1" path="animation-folder/ctrlSprite/" />
         <folder expanded="1" path="animation-folder/logoConfe/" />
         <folder expanded="1" path="animation-folder/bgMenu1/" />
         <folder expanded="1" path="animation-folder/avatar/" />
@@ -62,6 +68,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/btnRight/" />
         <folder expanded="1" path="animation-folder/btnInventario/" />
         <folder expanded="1" path="animation-folder/btnAceptar/" />
+        <folder expanded="1" path="animation-folder/btnPlatform/" />
         <folder expanded="1" path="animation-folder/sandalias/" />
         <folder expanded="1" path="animation-folder/progress_bar/" />
         <folder expanded="1" path="animation-folder/tree1/" />
@@ -114,5 +121,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/inv_canasta/" />
         <folder expanded="1" path="animation-folder/jesus/" />
         <folder expanded="1" path="animation-folder/sensorHuerta/" />
+        <folder expanded="1" path="animation-folder/t1/" />
     </folders-expanded>
 </c2uistate>

@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>e08_Platform1</name>
+    <events>
+        <event-group description="" sid="113639644737802" title="Por_siempre">
+            <sub-events>
+                <event-block sid="629276838965178">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="497276033038167" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set position to another object" sid="165797438499855" type="spriteNinjaGirl">
+                            <param id="0" name="Object">ctrlSprite</param>
+                            <param id="1" name="Image point (optional)">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="332361253078251" title="control_sprite">
+            <sub-events>
+                <event-block sid="865745877717089">
+                    <conditions>
+                        <condition id="4" name="Is touching object" sid="217858008195920" type="Touch">
+                            <param id="0" name="Object">btnRight</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="224126600213903" type="ctrlSprite">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="977851028181367" type="spriteNinjaGirl">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="370586651126942">
+                    <conditions>
+                        <condition id="4" name="Is touching object" sid="817498612739680" type="Touch">
+                            <param id="0" name="Object">btnLeft</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="639552737824030" type="ctrlSprite">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="780279687856389" type="spriteNinjaGirl">
+                            <param id="0" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="932241338663850">
+                    <conditions>
+                        <condition id="4" name="Is touching object" sid="880211039189340" type="Touch">
+                            <param id="0" name="Object">btnUp</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="685034965129729" type="ctrlSprite">
+                            <param id="0" name="Control">2</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="354441133378066" type="spriteNinjaGirl">
+                            <param id="0" name="Animation">&quot;jump&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="285480620711280">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="975706618375848" type="Keyboard">
+                            <param id="0" name="Key">39</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="403162771899100" type="spriteNinjaGirl">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="246838477344424">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="984854585256645" type="Keyboard">
+                            <param id="0" name="Key">37</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="253881794472569" type="spriteNinjaGirl">
+                            <param id="0" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="884031602610634">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="637052810753759" type="Keyboard">
+                            <param id="0" name="Key">38</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="170437970639587" title="Animations">
+            <sub-events>
+                <event-block sid="415365016496837">
+                    <conditions>
+                        <condition behavior="Platform" id="4" name="Is falling" sid="778711164536873" type="ctrlSprite" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="538205620385249" type="spriteNinjaGirl">
+                            <param id="0" name="Animation">&quot;jump&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="754706738954383">
+                    <conditions>
+                        <condition behavior="Platform" id="0" name="Is moving" sid="227858585275671" type="ctrlSprite" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="402018975658768" type="spriteNinjaGirl">
+                            <param id="0" name="Animation">&quot;run&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="194137443874865">
+                    <conditions>
+                        <condition behavior="Platform" id="0" inverted="1" name="Is moving" sid="993911537130196" type="ctrlSprite" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="393040735382507" type="spriteNinjaGirl">
+                            <param id="0" name="Animation">&quot;idle&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>
