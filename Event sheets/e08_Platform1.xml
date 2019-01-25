@@ -266,8 +266,9 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" sid="513271177197080" title="Animacion_caracol">
+        <event-group description="" sid="513271177197080" title="Animaciones">
             <sub-events>
+                <comment>Animación del caracol</comment>
                 <event-block sid="755803943580190">
                     <conditions>
                         <condition id="-7" name="Compare instance variable" sid="974907003575290" type="spriteCaracol">
@@ -331,6 +332,77 @@
                             </conditions>
                             <actions>
                                 <action id="-10" name="Set value" sid="845903431440213" type="spriteCaracol">
+                                    <param id="0" name="Instance variable">direccion</param>
+                                    <param id="1" name="Value">&quot;derecha&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <comment>Animación del coco</comment>
+                <event-block sid="517439785512359">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="247173631171682" type="spriteCoco">
+                            <param id="0" name="Instance variable">direccion</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;derecha&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="771582592242827" type="spriteCoco">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="212052913005390" type="spriteCoco">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="909287345676436">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="932788295717576" type="spriteCoco">
+                            <param id="0" name="Instance variable">direccion</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;izquierda&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="980108486581095" type="spriteCoco">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="719537984567813" type="spriteCoco">
+                            <param id="0" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="506470302461317">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="635736179453436" type="spriteCoco">
+                            <param id="0" name="Object">sensorLimiteHorizontal</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="916597653343789">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="481013141981590" type="spriteCoco">
+                                    <param id="0" name="Instance variable">direccion</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;derecha&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="227881440090529" type="spriteCoco">
+                                    <param id="0" name="Instance variable">direccion</param>
+                                    <param id="1" name="Value">&quot;izquierda&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="963046484170422">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="290749253948608" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="289383342006630" type="spriteCoco">
                                     <param id="0" name="Instance variable">direccion</param>
                                     <param id="1" name="Value">&quot;derecha&quot;</param>
                                 </action>

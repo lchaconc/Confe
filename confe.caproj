@@ -26,6 +26,7 @@
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
         <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="jumpthru" version="1">Jump-thru</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
@@ -240,6 +241,42 @@
                         <frame duration="1" hotspotX="0.5" hotspotY="1" />
                         <frame duration="1" hotspotX="0.504951" hotspotY="1" />
                         <frame duration="1" hotspotX="0.504951" hotspotY="1" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="spriteCoco" sid="876063549166644">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="direccion" sid="515672083317159" type="string" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="Platform" sid="325162966076382">
+                        <behavior id="Platform" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="21" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="160648639765573" speed="15">
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                        <frame duration="1" hotspotX="0.509804" hotspotY="1" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                        <frame duration="1" hotspotX="0.509091" hotspotY="1" />
+                        <frame duration="1" hotspotX="0.509091" hotspotY="1" />
+                        <frame duration="1" hotspotX="0.509091" hotspotY="1" />
+                        <frame duration="1" hotspotX="0.508772" hotspotY="1" />
+                        <frame duration="1" hotspotX="0.508197" hotspotY="1" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" />
                     </animation>
                 </animation-folder>
             </object-type>
@@ -1495,6 +1532,19 @@
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\logan24\Desktop\assets\Platform\Tiles\16.png" />
                         <frame duration="1" hotspotX="0.5" hotspotY="0.50505" original-source="C:\Users\logan24\Desktop\assets\Platform\Tiles\17.png" />
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\logan24\Desktop\assets\Platform\Tiles\18.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="t2" sid="789495305166024">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Jumpthru" sid="248356910429297">
+                        <behavior id="jumpthru" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="814944888409170" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.505376" original-source="C:\Users\logan24\Desktop\assets\Platform\Tiles\14.png" />
                     </animation>
                 </animation-folder>
             </object-type>
