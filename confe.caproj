@@ -24,6 +24,7 @@
     <used-behaviors>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
@@ -145,6 +146,11 @@
             </object-type>
             <object-type name="spriteNinjaGirl" sid="302238206889531">
                 <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Flash" sid="245373572164683">
+                        <behavior id="Flash" />
+                    </behavior-type>
+                </behaviors>
                 <animation-folder>
                     <animation framecount="10" loop="1" name="idle" pingpong="0" repeatcount="1" repeatto="0" sid="732896931050739" speed="16">
                         <frame duration="1" hotspotX="0.501718" hotspotY="1" original-source="C:\Users\logan24\Desktop\assets\Platform\ninjagirlnew\png\Idle__000.png" />
@@ -202,6 +208,38 @@
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="289874323872246" speed="5">
                         <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="spriteCaracol" sid="543849471682523">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable comment="Valor de dirección del caracol" name="direccion" sid="206634031711026" type="string" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="Platform" sid="309417052728890">
+                        <behavior id="Platform" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="17" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="584049647529219" speed="8">
+                        <frame duration="1" hotspotX="0.504951" hotspotY="1" />
+                        <frame duration="1" hotspotX="0.504951" hotspotY="1" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                        <frame duration="1" hotspotX="0.505155" hotspotY="1" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                        <frame duration="1" hotspotX="0.505376" hotspotY="1" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                        <frame duration="1" hotspotX="0.505495" hotspotY="1" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                        <frame duration="1" hotspotX="0.505376" hotspotY="1" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                        <frame duration="1" hotspotX="0.505155" hotspotY="1" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                        <frame duration="1" hotspotX="0.504951" hotspotY="1" />
+                        <frame duration="1" hotspotX="0.504951" hotspotY="1" />
                     </animation>
                 </animation-folder>
             </object-type>
@@ -1420,6 +1458,14 @@
                     </animation>
                 </animation-folder>
             </object-type>
+            <object-type name="sensorLimiteHorizontal" sid="610006679496710">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="849790767162804" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
         </object-folder>
         <object-folder name="tiles">
             <object-type name="t1" sid="989683256860276">
@@ -1497,6 +1543,16 @@
                 </animation-folder>
             </object-type>
         </object-folder>
+        <object-folder name="visor_controles">
+            <object-type name="corazonVida" sid="973635770480894">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="271012072817174" speed="5">
+                        <frame duration="1" hotspotX="0.505263" hotspotY="0.5" original-source="D:\Users\lchaconc\Desktop\corazon.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
     </object-folder>
     <families>
         <family name="btn_menu" plugin-id="Sprite" sid="102201987410844">
@@ -1516,6 +1572,14 @@
                 <member>comprador2</member>
                 <member>comprador3</member>
                 <member>comprador4</member>
+            </members>
+        </family>
+        <family name="sensores" plugin-id="Sprite" sid="719851249785450">
+            <members>
+                <member>limites</member>
+                <member>sensorAnticaida</member>
+                <member>sensorColisionArriba</member>
+                <member>sensorHuerta</member>
             </members>
         </family>
     </families>
