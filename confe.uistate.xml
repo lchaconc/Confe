@@ -11,8 +11,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout order="0">02_Menu_01</layout>
-        <layout active="1" order="3">08_Platform1</layout>
-        <event-sheet order="1">e02_Menu_01</event-sheet>
+        <layout active="1" order="1">08_Platform1</layout>
         <event-sheet order="2">e08_Platform1</event-sheet>
     </open-tabs>
     <properties>
@@ -40,11 +39,12 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="0" path="object-folder/particulas/" />
         <folder expanded="0" path="object-folder/sensores/" />
         <folder expanded="0" path="object-folder/tiles/" />
+        <folder expanded="0" path="object-folder/platform1/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="layout-folder/U_01/" />
         <folder expanded="0" path="layout-folder/General/" />
         <folder expanded="1" path="layout-folder/U_02/" />
-        <folder expanded="1" path="event-folder/" />
+        <folder expanded="0" path="event-folder/" />
         <folder expanded="0" path="file-folder/" />
         <folder expanded="0" path="sound-folder/" />
         <folder expanded="0" path="music-folder/" />
@@ -121,6 +121,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/inv_canasta/" />
         <folder expanded="1" path="animation-folder/jesus/" />
         <folder expanded="1" path="animation-folder/sensorHuerta/" />
+        <folder expanded="1" path="animation-folder/sensorAnticaida/" />
+        <folder expanded="1" path="animation-folder/sensorColisionArriba/" />
         <folder expanded="1" path="animation-folder/t1/" />
+        <folder expanded="1" path="animation-folder/objectsTiles/" />
     </folders-expanded>
 </c2uistate>

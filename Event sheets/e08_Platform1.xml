@@ -137,5 +137,94 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-group description="" sid="849871347301157" title="Sensores">
+            <sub-events>
+                <event-block sid="296726408707067">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="548053145950717" type="ctrlSprite">
+                            <param id="0" name="Object">sensorHuerta</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="11" name="Set enabled" sid="880979843988864" type="ctrlSprite">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="298437502879025" type="spriteNinjaGirl">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="298667440589968" type="ctrlSprite">
+                            <param id="0" name="Instance variable">vidas</param>
+                            <param id="1" name="Value">ctrlSprite.vidas - 1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="939491296407112" type="txtVidas">
+                            <param id="0" name="Text">ctrlSprite.vidas</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="544241968754246">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="333654669220989" type="ctrlSprite">
+                                    <param id="0" name="Instance variable">vidas</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Wait" sid="977575265527927" type="System">
+                                    <param id="0" name="Seconds">1.0</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="108790224932784" type="ctrlSprite">
+                                    <param id="0" name="X">128</param>
+                                    <param id="1" name="Y">160</param>
+                                </action>
+                                <action behavior="Platform" id="11" name="Set enabled" sid="900155333115915" type="ctrlSprite">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="778349795706429" type="spriteNinjaGirl">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="666534508654181">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="830797597558534" type="ctrlSprite">
+                            <param id="0" name="Object">sensorColisionArriba</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="199923608640548">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="285396757099826" type="objectsTiles">
+                                    <param id="0" name="Unique ID">221</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="622380735277928" type="objectsTiles">
+                                    <param id="0" name="Frame number">10</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="322774359884925" title="on_Load">
+            <sub-events>
+                <event-block sid="288689659712528">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="527127508875947" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="982214453125304" type="txtVidas">
+                            <param id="0" name="Text">ctrlSprite.vidas</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="509714760924478" title="Colision" />
     </events>
 </c2eventsheet>

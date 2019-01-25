@@ -10,6 +10,7 @@
         <variable constant="0" name="status" sid="136760279146205" static="0" type="text">nulo</variable>
         <event-group description="" sid="390927723385015" title="mainChar">
             <sub-events>
+                <comment>Movimientos con botones</comment>
                 <event-block sid="599187265375872">
                     <conditions>
                         <condition id="4" name="Is touching object" sid="927035356298601" type="Touch">
@@ -83,6 +84,59 @@
                     <actions>
                         <action id="4" name="Set animation" sid="277518849412533" type="farmMainCharacter">
                             <param id="0" name="Animation">&quot;idle&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>Control de animacion con teclado</comment>
+                <event-block sid="123185754612056">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="107092639777848" type="Keyboard">
+                            <param id="0" name="Key">39</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="120174562287136" type="farmMainCharacter">
+                            <param id="0" name="Animation">&quot;right&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="843197006861083">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="101379676717743" type="Keyboard">
+                            <param id="0" name="Key">38</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="175021011352950" type="farmMainCharacter">
+                            <param id="0" name="Animation">&quot;up&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="648984372078712">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="921592081553329" type="Keyboard">
+                            <param id="0" name="Key">37</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="743684184944091" type="farmMainCharacter">
+                            <param id="0" name="Animation">&quot;left&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="224116670656966">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="818975435731281" type="Keyboard">
+                            <param id="0" name="Key">40</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="983897493124330" type="farmMainCharacter">
+                            <param id="0" name="Animation">&quot;down&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
                     </actions>

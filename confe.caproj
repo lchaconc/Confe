@@ -188,6 +188,9 @@
             </object-type>
             <object-type name="ctrlSprite" sid="180039339925438">
                 <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="vidas" sid="651130063913702" type="number" />
+                </instance-variables>
                 <behaviors>
                     <behavior-type name="Platform" sid="580809431457455">
                         <behavior id="Platform" />
@@ -1363,6 +1366,9 @@
             <object-type name="txtFinJuego" sid="358367723452191">
                 <plugin id="Text" />
             </object-type>
+            <object-type name="txtVidas" sid="516749620979854">
+                <plugin id="Text" />
+            </object-type>
         </object-folder>
         <object-folder name="particulas">
             <object-type name="particulas_rojo" sid="385512792799643">
@@ -1389,6 +1395,27 @@
                 </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="416109452574297" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="sensorAnticaida" sid="320672417370061">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="629668063547779">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="443410125072787" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="sensorColisionArriba" sid="683454234800459">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="686732840346228" speed="5">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     </animation>
                 </animation-folder>
@@ -1422,6 +1449,50 @@
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\logan24\Desktop\assets\Platform\Tiles\16.png" />
                         <frame duration="1" hotspotX="0.5" hotspotY="0.50505" original-source="C:\Users\logan24\Desktop\assets\Platform\Tiles\17.png" />
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\logan24\Desktop\assets\Platform\Tiles\18.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="platform1">
+            <object-type name="objectsTiles" sid="235854895787458">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="728050439086212">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="13" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="243533653560023" speed="0">
+                        <frame duration="1" hotspotX="0.503704" hotspotY="1" original-source="C:\Users\logan24\Desktop\assets\Platform\Object\Bush (1).png" />
+                        <frame duration="1" hotspotX="0.503704" hotspotY="1" original-source="C:\Users\logan24\Desktop\assets\Platform\Object\Bush (2).png" />
+                        <frame duration="1" hotspotX="0.506667" hotspotY="1" original-source="C:\Users\logan24\Desktop\assets\Platform\Object\Bush (3).png" />
+                        <frame duration="1" hotspotX="0.506667" hotspotY="1" original-source="C:\Users\logan24\Desktop\assets\Platform\Object\Bush (4).png" />
+                        <frame duration="1" hotspotX="0.506329" hotspotY="1" original-source="C:\Users\logan24\Desktop\assets\Platform\Object\Crate.png" />
+                        <frame duration="1" hotspotX="0.509804" hotspotY="1" original-source="C:\Users\logan24\Desktop\assets\Platform\Object\Mushroom_1.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\logan24\Desktop\assets\Platform\Object\Mushroom_2.png" />
+                        <frame duration="1" hotspotX="0.507692" hotspotY="1" original-source="C:\Users\logan24\Desktop\assets\Platform\Object\Sign_1.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\logan24\Desktop\assets\Platform\Object\Sign_2.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\logan24\Desktop\assets\Platform\Object\Stone.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\logan24\Desktop\assets\Platform\Object\Tree_1.png">
+                            <collision-poly>
+                                <point x="0.20339" y="0" />
+                                <point x="0.745763" y="0" />
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\logan24\Desktop\assets\Platform\Object\Tree_2.png">
+                            <collision-poly>
+                                <point x="0.334507" y="0.570957" />
+                                <point x="0.0193664" y="0.328383" />
+                                <point x="0.514085" y="0.0264026" />
+                                <point x="0.982394" y="0.354786" />
+                                <point x="0.582747" y="0.542079" />
+                                <point x="0.711268" y="0.980198" />
+                                <point x="0.411972" y="0.996699" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\logan24\Desktop\assets\Platform\Object\Tree_3.png" />
                     </animation>
                 </animation-folder>
             </object-type>
