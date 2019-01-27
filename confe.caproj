@@ -870,8 +870,8 @@
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="589738991220833" speed="5">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.502857" original-source="C:\Users\mima\Desktop\CONFE\granja128w\granjapear tree128.png">
                             <collision-poly>
-                                <point x="0" y="0" />
-                                <point x="1" y="0" />
+                                <point x="0" y="0.137143" />
+                                <point x="1" y="0.131429" />
                                 <point x="1" y="0.754285" />
                                 <point x="0" y="0.742857" />
                             </collision-poly>

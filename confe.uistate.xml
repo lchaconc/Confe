@@ -44,7 +44,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="0" path="object-folder/visor_controles/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="layout-folder/U_01/" />
-        <folder expanded="0" path="layout-folder/General/" />
+        <folder expanded="1" path="layout-folder/General/" />
         <folder expanded="1" path="layout-folder/U_02/" />
         <folder expanded="0" path="event-folder/" />
         <folder expanded="0" path="file-folder/" />
