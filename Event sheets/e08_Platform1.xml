@@ -52,7 +52,7 @@
                 </event-block>
                 <event-block sid="932241338663850">
                     <conditions>
-                        <condition id="4" name="Is touching object" sid="880211039189340" type="Touch">
+                        <condition id="3" name="On touched object" sid="880211039189340" type="Touch">
                             <param id="0" name="Object">btnUp</param>
                         </condition>
                     </conditions>
@@ -220,6 +220,9 @@
                     <actions>
                         <action id="0" name="Set text" sid="982214453125304" type="txtVidas">
                             <param id="0" name="Text">ctrlSprite.vidas</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="307390109958386" type="sensores">
+                            <param id="0" name="Visibility">0</param>
                         </action>
                     </actions>
                 </event-block>
