@@ -72,33 +72,13 @@
                     </behavior-type>
                 </behaviors>
                 <animation-folder>
-                    <animation framecount="4" loop="0" name="down" pingpong="0" repeatcount="1" repeatto="0" sid="192155087284772" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
-                            <collision-poly>
-                                <point x="0.161765" y="0.11828" />
-                                <point x="0.5" y="0" />
-                                <point x="0.852941" y="0.107527" />
-                                <point x="0.941176" y="0.494624" />
-                                <point x="0.829503" y="0.960181" />
-                                <point x="0.266544" y="0.958165" />
-                                <point x="0.0735294" y="0.494624" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
-                            <collision-poly>
-                                <point x="0.171429" y="0.125" />
-                                <point x="0.5" y="0.0104167" />
-                                <point x="0.857143" y="0.104167" />
-                                <point x="0.928571" y="0.5" />
-                                <point x="0.780581" y="0.942709" />
-                                <point x="0.233705" y="0.953125" />
-                                <point x="0.114286" y="0.5" />
-                            </collision-poly>
-                        </frame>
+                    <animation framecount="4" loop="0" name="down" pingpong="0" repeatcount="1" repeatto="0" sid="192155087284772" speed="12">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     </animation>
-                    <animation framecount="4" loop="0" name="right" pingpong="0" repeatcount="1" repeatto="0" sid="549783439540682" speed="5">
+                    <animation framecount="4" loop="0" name="right" pingpong="0" repeatcount="1" repeatto="0" sid="549783439540682" speed="10">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5">
                             <collision-poly>
                                 <point x="0" y="0" />
@@ -111,7 +91,7 @@
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     </animation>
-                    <animation framecount="4" loop="0" name="up" pingpong="0" repeatcount="1" repeatto="0" sid="410686677824512" speed="5">
+                    <animation framecount="4" loop="0" name="up" pingpong="0" repeatcount="1" repeatto="0" sid="410686677824512" speed="12">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5">
                             <collision-poly>
                                 <point x="0.140625" y="0.0104167" />
@@ -124,7 +104,7 @@
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     </animation>
-                    <animation framecount="4" loop="0" name="left" pingpong="0" repeatcount="1" repeatto="0" sid="567250692091107" speed="5">
+                    <animation framecount="4" loop="0" name="left" pingpong="0" repeatcount="1" repeatto="0" sid="567250692091107" speed="10">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
@@ -177,10 +157,7 @@
                         <frame duration="1" hotspotX="0.501529" hotspotY="1" original-source="C:\Users\logan24\Desktop\assets\Platform\ninjagirlnew\png\Run__008.png" />
                         <frame duration="1" hotspotX="0.501458" hotspotY="1" original-source="C:\Users\logan24\Desktop\assets\Platform\ninjagirlnew\png\Run__009.png" />
                     </animation>
-                    <animation framecount="12" loop="0" name="jump" pingpong="0" repeatcount="1" repeatto="0" sid="770816790660689" speed="12">
-                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\logan24\Desktop\assets\Platform\ninjagirlnew\png\Idle__008.png" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\logan24\Desktop\assets\Platform\ninjagirlnew\png\Idle__009.png" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\logan24\Desktop\assets\Platform\ninjagirlnew\png\Jump__000.png" />
+                    <animation framecount="9" loop="0" name="jump" pingpong="0" repeatcount="1" repeatto="0" sid="770816790660689" speed="10">
                         <frame duration="1" hotspotX="0.501695" hotspotY="1" original-source="C:\Users\logan24\Desktop\assets\Platform\ninjagirlnew\png\Jump__001.png" />
                         <frame duration="1" hotspotX="0.501718" hotspotY="1" original-source="C:\Users\logan24\Desktop\assets\Platform\ninjagirlnew\png\Jump__002.png" />
                         <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\logan24\Desktop\assets\Platform\ninjagirlnew\png\Jump__003.png" />
@@ -190,6 +167,20 @@
                         <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\logan24\Desktop\assets\Platform\ninjagirlnew\png\Jump__007.png" />
                         <frame duration="1" hotspotX="0.501629" hotspotY="1" original-source="C:\Users\logan24\Desktop\assets\Platform\ninjagirlnew\png\Jump__008.png" />
                         <frame duration="1" hotspotX="0.501629" hotspotY="1" original-source="C:\Users\logan24\Desktop\assets\Platform\ninjagirlnew\png\Jump__009.png" />
+                    </animation>
+                    <animation framecount="12" loop="0" name="Animation2" pingpong="0" repeatcount="1" repeatto="0" sid="743604234073830" speed="12">
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                        <frame duration="1" hotspotX="0.501695" hotspotY="1" />
+                        <frame duration="1" hotspotX="0.501718" hotspotY="1" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                        <frame duration="1" hotspotX="0.501608" hotspotY="1" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                        <frame duration="1" hotspotX="0.501629" hotspotY="1" />
+                        <frame duration="1" hotspotX="0.501629" hotspotY="1" />
                     </animation>
                 </animation-folder>
             </object-type>
@@ -1630,6 +1621,7 @@
                 <member>sensorAnticaida</member>
                 <member>sensorColisionArriba</member>
                 <member>sensorHuerta</member>
+                <member>sensorLimiteHorizontal</member>
             </members>
         </family>
     </families>

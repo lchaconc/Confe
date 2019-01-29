@@ -135,6 +135,17 @@
                         </action>
                     </actions>
                 </event-block>
+                <event-block sid="621142543694467">
+                    <conditions>
+                        <condition behavior="Platform" id="3" name="Is jumping" sid="870206487279457" type="ctrlSprite" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="574211467651152" type="spriteNinjaGirl">
+                            <param id="0" name="Animation">&quot;jump&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
             </sub-events>
         </event-group>
         <event-group description="" sid="849871347301157" title="Sensores">

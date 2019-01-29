@@ -11,8 +11,10 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout order="0">02_Menu_01</layout>
-        <layout active="1" order="1">08_Platform1</layout>
+        <layout order="1">08_Platform1</layout>
+        <layout active="1" order="3">07_Game_farm</layout>
         <event-sheet order="2">e08_Platform1</event-sheet>
+        <event-sheet order="4">e07_Game_farm</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -46,7 +48,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="layout-folder/U_01/" />
         <folder expanded="1" path="layout-folder/General/" />
         <folder expanded="1" path="layout-folder/U_02/" />
-        <folder expanded="0" path="event-folder/" />
+        <folder expanded="1" path="event-folder/" />
         <folder expanded="0" path="file-folder/" />
         <folder expanded="0" path="sound-folder/" />
         <folder expanded="0" path="music-folder/" />
